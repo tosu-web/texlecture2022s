@@ -1,0 +1,114 @@
+/*目次
+＠サブメニュー（ページ内リンク）
+＠コードブロック
+＠ポイント枠
+＠前へ・次へボタン
+*/
+
+/*サブメニュー*/
+.main{
+    display: flex;
+}
+.explanation{
+    font-size: 13px;
+    line-height: 2;
+    margin: 30px 0;/*適宜調整してください*/
+}
+.mainContent{
+    width: 850px;
+}
+.submenu{
+    width: 160px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 60px;
+    line-height: 2.5;
+}
+.bigTitle{
+    width:720px;
+}
+
+/*コードブロック*/
+.codeblock{
+    margin: 20px 0;
+}
+code {
+    font-family: Consolas, Menlo, Monaco, -apple-system, BlinkMacSystemFont, "Segoe UI", Meiryo, monospace;
+    display: inline-block;
+    border-radius: 7px; /* 角丸 */
+    width: calc(850px - 40px);
+    padding: 25px 20px;
+  }
+
+/*ポイント枠*/
+.pointBox{
+    border: solid 3px white;/*ここから枠色を変えてください　赤：#E54A46　黄：#F6BC41　緑：#49A22E　水色：#74C4E7*/
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
+    width: calc(850px - 46px);
+}
+.pointTitle{
+    position: relative;
+}
+.pointTitle > div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-90deg);
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 13px;
+}
+.pointTitle > hr{
+    border: 1px solid var(white);
+    border-style: none solid none none;
+}
+.pointBox p{
+    margin-left: 23px;
+    font-size: 13px;
+    line-height: 2;/*行間*/
+    flex-grow: 1;
+}
+
+/*前へ・次へボタン*/
+.footer{
+    display: inline-block;
+    width: 100%;
+    margin: 40px 0;
+}
+.button{
+    background-color: #1F5FFF;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 320px;
+    display: inline-block;
+    padding: 25px 35px;
+    display: inline-block;
+}
+.prev{
+    margin-right: 63px;
+}
+.character{
+    display: inline-block;
+    margin: 0 0 10px 0px;
+}
+.character_prev{
+    margin-left: 20px;
+}
+.character_next{
+    margin-right: 155px;
+}
+.buttonTitle{
+    font-size: 18px;
+}
+.miniTitle{
+    font-size: 10px;
+}
+.arrow{/* ＜　＞ ←このマーク*/
+    font-size: 30px;
+}
