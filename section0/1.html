@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <!--フォント指定-->
+        <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+        <!--fontawesome-->
+        <script src="https://kit.fontawesome.com/60ea5b1c05.js" crossorigin="anonymous"></script>
+        <!--コードブロック-->
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/atelier-sulphurpool-dark.css">
+        <link rel="stylesheet" type="text/css" href="css/base.css">
+        <link rel="stylesheet" type="text/css" href="css/content.css">
+        <title>0-1：Macの場合</title>
+    </head>
+    <body>
+        <!--ここからサイドバー-->
+        <div class="sidebar">
+            <img src="images/logo2.svg" class="margin">
+            <div class="sidebarSticky margin">
+                <!--ここからアコーディオンメニュー-->
+                <div class="accordion">
+                    <div class="option">
+                        <input type="checkbox" id="toggle1" class="toggle">
+                        <label class="title" for="toggle1">環境の準備</label>
+                        <div class="content">
+                            <p>Macの場合</p>
+                            <p>Windowsの場合</p>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="toggle2" class="toggle">
+                        <label class="title" for="toggle2">はじめてのTeX文書</label>
+                        <div class="content">
+                            <p>ファイルの基本構造</p> 
+                            <p>数式モード</p>
+                            <p>数式コマンド(超基本)[分数・四則演算]</p>
+                            <p>コンパイル</p>
+                            <p>実践1 (分数の四則演算)</p>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="toggle3" class="toggle">
+                        <label class="title" for="toggle3">数式に慣れる</label>
+                        <div class="content">
+                            <p>文字・記号コマンド(基本)[ギリシャ文字・±・平方根]</p>
+                            <p>実践2 (2次方程式・不等式)</p>
+                            <p>数式コマンド(基本)[三角関数・指数対数]</p>
+                            <p>実践3 (指数対数の書き方)</p>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="toggle4" class="toggle">
+                        <label class="title" for="toggle4">文章成形</label>
+                        <div class="content">
+                            <p>パッケージの導入</p>
+                            <p>目次を作る</p>
+                            <p>文字を装飾する [フォントサイズ・太さ・色]</p>
+                            <p>文書の中心揃え・図の挿入</p>
+                            <p>表を作る</p>
+                            <p>数式の中央揃えと\displaystyle [\left,\mathrmなども扱う]</p>
+                            <p>実践4 (教科書を写してみる)</p>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="toggle5" class="toggle">
+                        <label class="title" for="toggle5">専門的な数式</label>
+                        <div class="content">
+                            <p>数列・極限</p>
+                            <p>微分・積分</p>
+                            <p>実践5 (区分求積法)</p>
+                            <p>ベクトル・行列</p>
+                            <p>連立方程式</p>
+                            <p>実践6 (行列とベクトルの積) [\arrayに慣れる]</p>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="toggle6" class="toggle">
+                        <label class="title" for="toggle6">tcolorbox入門</label>
+                        <div class="content">
+                            <p>いろいろな枠</p>
+                            <p>tcolorboxを使う [注意：ページ跨ぎできない]</p>
+                            <p>色・形を変えてみる</p>
+                            <p>実践7 (tcolorboxの応用)</p>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="toggle7" class="toggle">
+                        <label class="title" for="toggle7">TikZ入門</label>
+                        <div class="content">
+                            <p>座標軸を描く</p>
+                            <p>直線図形と塗りつぶし</p>
+                            <p>関数を描く</p>
+                            <p>実践8 (教科書のグラフを写してみる)</p>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="toggle8" class="toggle">
+                        <label class="title" for="toggle8">自作コマンド</label>
+                        <div class="content">
+                            <p>自作コマンドの作り方</p>
+                            <p>自作カウンタ</p>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="toggle9" class="toggle">
+                        <label class="title" for="toggle9">付録</label>
+                        <div class="content">
+                            <p>文字・記号コマンドまとめ</p>
+                            <p>数式コマンドまとめ</p>
+                            <p>写し練習用問題</p>
+                            <p>TikZの作品例</p>
+                        </div>
+                    </div>
+                </div>
+                <!--ここまでアコーディオンメニュー-->
+                <ul class="minilist">
+                    <li>このゼミについて</li>
+                    <li>アンケート</li>
+                    <i class="fa-brands fa-twitter"></i><!--twitterアイコン-->
+                </ul>
+            </div>    
+        </div>
+        <!--ここまでサイドバー-->
+        <!--ここからメイン-->
+        <div class="main">
+            <div class="mainContent">
+                <!--ここからパンくずリスト-->
+                <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="index.html">
+                        <span itemprop="name">ホーム</span>
+                        </a>
+                        <meta itemprop="position" content="1" />
+                    </li>
+                    
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="title.html">
+                            <span itemprop="name">環境の準備</span>
+                        </a>
+                        <meta itemprop="position" content="2" />
+                    </li>
+
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="content.html">
+                            <span itemprop="name">Macの場合</span>
+                        </a>
+                        <meta itemprop="position" content="3" />
+                    </li>
+                </ol>
+                <!--ここまでパンくずリスト-->
+                <!--ここから大見出し-->
+                <div class="titleArea">
+                    <div class="titleIcon">
+                        <span class="titleNumber">01</span><!--01,02,03などの数字-->
+                    </div>
+                    <div class="bigTitle">
+                        Macの場合
+                        <p style="margin-top: 10px;">
+                            補足説明を書く場所。これは、ダミーです。これは、ダミーです。
+                            これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                            これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                        </p>
+                    </div>
+                </div>
+                <!--ここまで大見出し-->
+                <p class="explanation">
+                    説明を書く場所。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                    これは、ダミーです。これは、ダミーです。説明を書く場所。これは、ダミーです。
+                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                </p>
+                <!--ここからコードブロック-->
+                <div class="codeblock">
+                    <!--以下にコードを貼り付けてください　＊スペースはそのまま反映されます-->
+                    <pre><code class="prettyprint linenums">var foo = function (bar) {
+    return bar++;
+};
+                      
+console.log(foo(5));</code></pre>
+                </div>
+                <!--ここまでコードブロック-->
+                <!--ここからポイント枠-->
+                <div class="pointBox">
+                    <div class="pointTitle">
+                        <div>Point</div>
+                    </div>
+                    <hr>
+                    <p>
+                        説明を書く場所。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                        これは、ダミーです。これは、ダミーです。説明を書く場所。これは、ダミーです。
+                        これは、ダミーです。これは、ダミーです。
+                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                        これは、ダミーです。これは、ダミーです。
+                    </p>
+                </div>
+                <!--ここまでポイント枠-->
+                <!--ここから前へ・次へボタン-->
+                <div class="footer">
+                    <div class="button prev">
+                        <i class="fa-solid fa-angle-left arrow"></i><!--矢印-->
+                        <div class="character character_prev">
+                            <span class="miniTitle">前のページ</span><br>
+                            <span class="buttonTitle">環境の準備</span>
+                        </div>
+                    </div>
+                    <div class="button next">
+                        <div class="character character_next">
+                            <span class="miniTitle">次のページ</span><br>
+                            <span class="buttonTitle">Windowsの場合</span>
+                        </div>
+                        <i class="fa-solid fa-angle-right arrow"></i><!--矢印-->
+                    </div>
+                </div>
+                <!--ここまで前へ・次へボタン-->
+            </div> 
+            <div class="submenu">
+                <ul>
+                    <li>ダミーテキスト</li>
+                    <li>ダミーテキスト</li>
+                    <li>ダミーテキスト</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
