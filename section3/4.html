@@ -18,7 +18,6 @@
         <!--ここからサイドバー-->
         <div class="sidebar">
             <div class="sidebarSticky margin">
-                <a href="../index.html"><img src="../images/logo2.svg" class="margin"></a>
                 <!--ここからアコーディオンメニュー-->
                 <div class="accordion">
                     <div class="option">
@@ -170,6 +169,32 @@
                     TeX で図を挿入する際にはプリアンブルに \usepackage{graphicx} と記述する必要があります。
                     その上で、次のように graph を記述します。
                 </p>
+                <div class="codeblock">
+                    <pre>
+<code class="prettyprint linenums lang-tex">% \usepackage{graphicx}をしておく
+\begin{figure}[htb]
+\includegraphics[width=20mm]{hogehoge.jpg}
+\end{figure}</code></pre>
+                </div>
+                <p class="imgBox">
+                    <img src="../images/34_2.png">
+                </p>
+                <p class="explanation">
+                    こうすれば、 texファイルと同じディレクトリにある hogehoge.jpg という画像ファイルを読み込みことができます。
+                    このコードについても1つずつ見ていきます。
+                </p>
+                <p class="explanation">
+                    2行目からの figure で画像や図を入れるための領域を準備します。
+                    しかし、画像の大きさなどによって領域がうまく確保できないことがあります。
+                    そのために書いている [htb] は here → top → bottom の順に優先して位置を指定する
+                    という意味で、コードが書いている場所に領域が確保できればそこに、できなければ次にページの上部に、そこでもできなければページの下部に
+                    表示させるという処理を行います。
+                </p>
+                <p class="explanation">
+                    \includegraphics は図を挿入するもので、その次の [width=20mm] で画像の幅を指定しています。
+                    もちろん [height=...] と指定することもでき、 [scale=0.6] とすれば縦横ともに元画像の 0.6倍の大きさになります。
+                </p>
+
 
                 <div class="cautionBox">
                     <div class="pointTitle">
