@@ -11,12 +11,11 @@
         <link rel="stylesheet" type="text/css" href="../css/atelier-sulphurpool-dark.css">
         <link rel="stylesheet" type="text/css" href="../css/base.css">
         <link rel="stylesheet" type="text/css" href="../css/content.css">
-        <title>0-1：Macの場合</title>
+        <title>0-2:Windowsの場合</title>
     </head>
     <body>
         <!--ここからサイドバー-->
         <div class="sidebar">
-            <a href="../index.html"><img src="../images/logo2.svg" class="margin"></a>
             <div class="sidebarSticky margin">
                 <!--ここからアコーディオンメニュー-->
                 <div class="accordion">
@@ -102,11 +101,6 @@
                     </div>
                 </div>
                 <!--ここまでアコーディオンメニュー-->
-                <ul class="minilist">
-                    <li>このゼミについて</li>
-                    <li>アンケート</li>
-                    <i class="fa-brands fa-twitter"></i><!--twitterアイコン-->
-                </ul>
             </div>    
         </div>
         <!--ここまでサイドバー-->
@@ -130,8 +124,8 @@
                     </li>
 
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a itemprop="item" href="content.html">
-                            <span itemprop="name">Macの場合</span>
+                        <a itemprop="item" href="2.html">
+                            <span itemprop="name">Windowsの場合</span>
                         </a>
                         <meta itemprop="position" content="3" />
                     </li>
@@ -140,68 +134,101 @@
                 <!--ここから大見出し-->
                 <div class="titleArea">
                     <div class="titleIcon">
-                        <span class="titleNumber">01</span><!--01,02,03などの数字-->
+                        <span class="titleNumber">02</span><!--01,02,03などの数字-->
                     </div>
                     <div class="bigTitle">
-                        Macの場合
+                        Windowsの場合
                         <p style="margin-top: 10px;">
-                            補足説明を書く場所。これは、ダミーです。これは、ダミーです。
-                            これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                            これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                            このページでは Windows の場合の TeX環境設定を紹介します。
                         </p>
                     </div>
                 </div>
                 <!--ここまで大見出し-->
-                <p class="explanation">
-                    説明を書く場所。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。説明を書く場所。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                </p>
-                <!--ここからコードブロック-->
-                <div class="codeblock">
-                    <!--以下にコードを貼り付けてください　＊スペースはそのまま反映されます-->
-                    <pre><code class="prettyprint linenums">var foo = function (bar) {
-    return bar++;
-};
-                      
-console.log(foo(5));</code></pre>
-                </div>
-                <!--ここまでコードブロック-->
-                <!--ここからポイント枠-->
-                <div class="pointBox">
+                <div class="cautionBox">
                     <div class="pointTitle">
-                        <div>Point</div>
+                        <div>Caution</div>
                     </div>
                     <hr>
                     <p>
-                        説明を書く場所。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。説明を書く場所。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。
+                        既に環境を整備している場合にやり直す必要はありません。LuaLaTex のセットアップができていなくても、コードの一部を変更すれば支障はありません。
+                        Mac に比べて Windows のセットアップは複雑で面倒です。Mac の PCを持っている方は Macを使うことを強くお勧めします。<br>
+                        また、いくつかの補足情報を前ページに記しているので Windows ユーザーの方も一読お願いします。
                     </p>
                 </div>
-                <!--ここまでポイント枠-->
+                <div class="cautionBox">
+                    <div class="pointTitle">
+                        <div>Caution</div>
+                    </div>
+                    <hr>
+                    <p>
+                        Web ページの作者は Windows での TeX 経験はありますが設定についての知識は乏しいため、
+                        ここでの方法でうまくいかなかった場合は調べてトライした上で不具合箇所と結果を報告いただけると幸いです。
+                    </p>
+                </div>
+
+                <h2 id="head1">インストール</h2>
+                <p class="explanation">
+                    まずはこの<a href="https://www.tug.org/texlive/acquire-netinstall.html">リンク</a>から、install-tl-windows.exe をダウンロードします。
+                </p>
+                <p class="explanation">
+                    ダウンロードしたらこのファイルを実行し、指示に従ってインストールを進めます。1〜2時間かかります。
+                    途中で「TeXworks をインストール」という項目があったら忘れずにチェックを入れておきましょう！
+                </p>
+
+                <h2 id="head2">TeXworksの設定</h2>
+                <p class="explanation">
+                    インストールが完了したら、編集環境として利用できる TeXworks の設定をします。<br>
+                    起動したら「編集」→「設定」と進み、一覧のうちの「LuaLaTeX」を選択して次のように設定します。
+                </p>
+                <ul>
+                    <li>名前：LuaLaTeX</li>
+                    <li>プログラム：lualatex</li>
+                    <li>引数 (1行ずつ記入すること)</li>
+                    <ul>
+                        <li>-l</li>
+                        <li>-ot</li>
+                        <li>$synctexoption -guess-input-enc -kanji=utf8</li>
+                        <li>$fullname</li>
+                    </ul>
+                    <li>「実行後、pdfを表示する」にチェック</li>
+                </ul>
+                <p class="explanation">
+                    これで LuaLaTeX を日本語で実行する準備は完了です！
+                </p>
+
+                <h2 id="head3">コンパイルの実行</h2>
+                <p class="explanation">
+                    TeX のプログラムを pdf に変換するような翻訳作業を<b>コンパイル</b>といいます。TeXworks でも簡単にコンパイルすることができます。<br>
+                    中身は後で解説するので、とりあえず次のコードをコピーして画像のように書き込み、左上の再生ボタンのようなものの隣のリストで「LuaLaTeX」を選択してからボタンをクリックします。
+                </p>
+                <div class="codeblock">
+                    <pre>
+<code class="prettyprint linenums lang-tex">\documentclass{ltjsarticle}
+
+\begin{document}
+ほげほげ
+\end{document}</code></pre>
+                </div>
+                <p class="explanation">
+                    正しく入力・設定できていれば pdf が表示されるはずです！
+                </p>
+
                 <!--ここから前へ・次へボタン-->
                 <div class="footer">
-                    <a href="../section0/2.html">
+                    <a href="../section0/1.html">
                     <div class="button prev">
                         <i class="fa-solid fa-angle-left arrow"></i><!--矢印-->
                         <div class="character character_prev">
                             <span class="miniTitle">前のページ</span><br>
-                            <span class="buttonTitle">環境の準備</span>
+                            <span class="buttonTitle">Macの場合</span>
                         </div>
                     </div>
                     </a>
-                    <a href="../section1/2.html">
+                    <a href="../section1/1.html">
                     <div class="button next">
                         <div class="character character_next">
                             <span class="miniTitle">次のページ</span><br>
-                            <span class="buttonTitle">Windowsの場合</span>
+                            <span class="buttonTitle">基本構造</span>
                         </div>
                         <i class="fa-solid fa-angle-right arrow"></i><!--矢印-->
                     </div>
@@ -211,9 +238,9 @@ console.log(foo(5));</code></pre>
             </div> 
             <div class="submenu">
                 <ul>
-                    <li>ダミーテキスト</li>
-                    <li>ダミーテキスト</li>
-                    <li>ダミーテキスト</li>
+                    <li><a href="#head1">インストール</a></li>
+                    <li><a href="#head2">TeXworksの設定</a></li>
+                    <li><a href="#head3">コンパイル</a></li>
                 </ul>
             </div>
         </div>
