@@ -10,7 +10,7 @@
     display: flex;
 }
 .explanation{
-    font-size: 13px;
+    font-size: 16px;
     line-height: 2;
     margin: 30px 0;/*適宜調整してください*/
 }
@@ -24,6 +24,17 @@
     margin-left: 60px;
     line-height: 2.5;
 }
+
+.submenu > ul{
+    position: sticky;
+    top: 50px;
+}
+
+.submenu > ul > li > a {
+    color: #ffffff;
+    text-decoration:none;
+}
+
 .bigTitle{
     width:720px;
 }
@@ -41,6 +52,7 @@ code {
   }
 
 /*ポイント枠*/
+/* pointBox:ポイント cautionBox:注意*/
 .pointBox{
     border: solid 3px white;/*ここから枠色を変えてください　赤：#E54A46　黄：#F6BC41　緑：#49A22E　水色：#74C4E7*/
     border-radius: 10px;
@@ -68,6 +80,25 @@ code {
     border-style: none solid none none;
 }
 .pointBox p{
+    margin-left: 23px;
+    font-size: 13px;
+    line-height: 2;/*行間*/
+    flex-grow: 1;
+}
+
+.cautionBox{
+    border: solid 3px #F6BC41;/*ここから枠色を変えてください　赤：#E54A46　黄：#F6BC41　緑：#49A22E　水色：#74C4E7*/
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
+    width: calc(850px - 46px);
+}
+.cautionBox > hr{
+    border: 1px solid #F6BC41;
+    border-style: none solid none none;
+}
+.cautionBox p{
     margin-left: 23px;
     font-size: 13px;
     line-height: 2;/*行間*/
@@ -111,4 +142,13 @@ code {
 }
 .arrow{/* ＜　＞ ←このマーク*/
     font-size: 30px;
+}
+/*画像枠*/
+.imgBox {
+    text-align: center;
+    margin: auto;
+}
+.imgBox > img {
+    width: 80%;
+    height: auto;
 }

@@ -7,17 +7,17 @@
         <!--fontawesome-->
         <script src="https://kit.fontawesome.com/60ea5b1c05.js" crossorigin="anonymous"></script>
         <!--コードブロック-->
-        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=tex"></script>
         <link rel="stylesheet" type="text/css" href="../css/atelier-sulphurpool-dark.css">
         <link rel="stylesheet" type="text/css" href="../css/base.css">
         <link rel="stylesheet" type="text/css" href="../css/content.css">
-        <title>0-1：Macの場合</title>
+        <title>1-1:ファイルの基本構造</title>
     </head>
     <body>
         <!--ここからサイドバー-->
         <div class="sidebar">
-            <a href="../index.html"><img src="../images/logo2.svg" class="margin"></a>
             <div class="sidebarSticky margin">
+                <a href="../index.html"><img src="../images/logo2.svg" class="margin"></a>
                 <!--ここからアコーディオンメニュー-->
                 <div class="accordion">
                     <div class="option">
@@ -49,7 +49,7 @@
                     </div>
                     <div class="option">
                         <input type="checkbox" id="toggle4" class="toggle">
-                        <label class="title" for="toggle4">文章成形</label>
+                        <label class="title" for="toggle4">文書整形</label>
                         <div class="content">
                             <a href="../section3/1.html"><p>パッケージの導入</p></a>
                             <a href="../section3/2.html"><p>目次を作る</p></a>
@@ -102,11 +102,6 @@
                     </div>
                 </div>
                 <!--ここまでアコーディオンメニュー-->
-                <ul class="minilist">
-                    <li>このゼミについて</li>
-                    <li>アンケート</li>
-                    <i class="fa-brands fa-twitter"></i><!--twitterアイコン-->
-                </ul>
             </div>    
         </div>
         <!--ここまでサイドバー-->
@@ -124,14 +119,14 @@
                     
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                         <a itemprop="item" href="title.html">
-                            <span itemprop="name">環境の準備</span>
+                            <span itemprop="name">はじめてのTeX文書</span>
                         </a>
                         <meta itemprop="position" content="2" />
                     </li>
 
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a itemprop="item" href="content.html">
-                            <span itemprop="name">Macの場合</span>
+                        <a itemprop="item" href="1.html">
+                            <span itemprop="name">ファイルの基本構造</span>
                         </a>
                         <meta itemprop="position" content="3" />
                     </li>
@@ -140,52 +135,93 @@
                 <!--ここから大見出し-->
                 <div class="titleArea">
                     <div class="titleIcon">
-                        <span class="titleNumber">01</span><!--01,02,03などの数字-->
+                        <span class="titleNumber">11</span><!--01,02,03などの数字-->
                     </div>
                     <div class="bigTitle">
-                        Macの場合
+                        ファイルの基本構造
                         <p style="margin-top: 10px;">
-                            補足説明を書く場所。これは、ダミーです。これは、ダミーです。
-                            これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                            これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                            ここでは TeX 文書の構造について紹介します。どんな TeX 文書でもここで紹介する構造が必ず使われていて間違えるとエラーが沢山出てしまいます。
                         </p>
                     </div>
                 </div>
                 <!--ここまで大見出し-->
+                <h2 id="head1">基本構造</h2>
                 <p class="explanation">
-                    説明を書く場所。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。説明を書く場所。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                    まずは TeX ファイルの基本的な構造を紹介し、そこから細かく見ていきます。
                 </p>
                 <!--ここからコードブロック-->
                 <div class="codeblock">
                     <!--以下にコードを貼り付けてください　＊スペースはそのまま反映されます-->
-                    <pre><code class="prettyprint linenums">var foo = function (bar) {
-    return bar++;
-};
-                      
-console.log(foo(5));</code></pre>
+                    <pre>
+<code class="prettyprint linenums lang-tex">\documentclass{ltjsarticle}
+
+\begin{document}
+ほげほげ
+\end{document}</code></pre>
                 </div>
                 <!--ここまでコードブロック-->
+                <p class="explanation">
+                    このコードによって次のような pdf が出力されます。(コピーして実行してみましょう！)
+                </p>
+                <p class="imgBox">
+                    <img src="../images/11_1.png">
+                </p>
+                <p class="explanation">
+                    1行目から順に見てみます。まず、 documentclass というのは文書の書式やコンパイル方法を指定するもので、この中での ltjsarticle の他にも
+                    jsarticle や jsbook などさまざまなものがあります。 (u)pLaTeX を用いる jsarticle は日本では一番よく使われているものですが、
+                    歴史的な問題や技術的な問題からここでは柔軟で便利とされる LuaLaTeX を用いる ltjsarticle を使います。<br>
+                    論文等では jsarticle がまだまだ主流なので、場合によって使い分けましょう。その際に必要な設定は 01,02 に記しています。
+                </p>
                 <!--ここからポイント枠-->
-                <div class="pointBox">
+                <div class="cautionBox">
                     <div class="pointTitle">
-                        <div>Point</div>
+                        <div>Caution</div>
                     </div>
                     <hr>
                     <p>
-                        説明を書く場所。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。説明を書く場所。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。
+                        環境によっては ltjsarticle が通らない(コンパイルエラーを生じる)場合があります。<br>
+                        例えば、(u)pLaTeX を利用している場合は ltjsarticle を jsarticle にする必要があります。
                     </p>
                 </div>
                 <!--ここまでポイント枠-->
+                <p class="explanation">
+                    また、 documentclass には次のようにオプションをつけることができます。
+                </p>
+                <div class="codeblock">
+                    <!--以下にコードを貼り付けてください　＊スペースはそのまま反映されます-->
+                    <pre>
+<code class="prettyprint linenums lang-tex">\documentclass[b5paper,12pt]{ltjsarticle}</code></pre>
+                </div>
+                <p class="explanation">
+                    1行目をこのようにすれば、文書がB5サイズ(デフォルトはA4サイズ)・フォントが12pt(デフォルトは10pt)で作られます。<br>
+                    ただし、ここのフォントサイズは ltjsarticle クラスでは10pt, 11pt, 12ptしか指定することができません。
+                </p>
+                <p class="explanation">
+                    \begin{document}の前の部分を<b>プリアンブル</b>といい、documentclass の指定やパッケージの読み込み(\usepackage, 後々解説)といった
+                    文書の前提となる設定を行います。<br>
+                    コード例にあるように、表示される内容は\begin{document}から\end{document}の間に書き込みます。<br>
+                    改行する際は、ダブルスラッシュ\\を使います。次の例のように出力されます。
+                </p>
+                <div class="codeblock">
+                    <!--以下にコードを貼り付けてください　＊スペースはそのまま反映されます-->
+                    <pre>
+<code class="prettyprint linenums lang-tex">\documentclass{ltjsarticle}
+
+\begin{document}
+はろー\\
+ほげほげ
+はろー
+\end{document}</code></pre>
+                </div>
+                <p class="imgBox">
+                    <img src="../images/11_2.png">
+                </p>
+                <p class="explanation">
+                    5行目にダブルスラッシュが入っていないので2つ目の「はろー」の前で改行されていません。<br>
+                    1つ目の「はろー」が字下げされているのは仕様で、段落始めや \begin{document} の直後を字下げするようになっています。
+                    これを解消するためにはその前に \noindent と入れます。
+                </p>
+
                 <!--ここから前へ・次へボタン-->
                 <div class="footer">
                     <a href="../section0/2.html">
@@ -193,7 +229,7 @@ console.log(foo(5));</code></pre>
                         <i class="fa-solid fa-angle-left arrow"></i><!--矢印-->
                         <div class="character character_prev">
                             <span class="miniTitle">前のページ</span><br>
-                            <span class="buttonTitle">環境の準備</span>
+                            <span class="buttonTitle">Windowsの場合</span>
                         </div>
                     </div>
                     </a>
@@ -201,7 +237,7 @@ console.log(foo(5));</code></pre>
                     <div class="button next">
                         <div class="character character_next">
                             <span class="miniTitle">次のページ</span><br>
-                            <span class="buttonTitle">Windowsの場合</span>
+                            <span class="buttonTitle">数式(超基本)</span>
                         </div>
                         <i class="fa-solid fa-angle-right arrow"></i><!--矢印-->
                     </div>
@@ -211,9 +247,7 @@ console.log(foo(5));</code></pre>
             </div> 
             <div class="submenu">
                 <ul>
-                    <li>ダミーテキスト</li>
-                    <li>ダミーテキスト</li>
-                    <li>ダミーテキスト</li>
+                    <li><a href="#head1">基本構造</a></li>
                 </ul>
             </div>
         </div>

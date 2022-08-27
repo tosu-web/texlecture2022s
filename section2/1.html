@@ -7,17 +7,18 @@
         <!--fontawesome-->
         <script src="https://kit.fontawesome.com/60ea5b1c05.js" crossorigin="anonymous"></script>
         <!--コードブロック-->
-        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=tex"></script>
+        <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script> 
         <link rel="stylesheet" type="text/css" href="../css/atelier-sulphurpool-dark.css">
         <link rel="stylesheet" type="text/css" href="../css/base.css">
         <link rel="stylesheet" type="text/css" href="../css/content.css">
-        <title>0-1：Macの場合</title>
+        <title>2-1:文字・記号コマンド(基本)</title>
     </head>
     <body>
         <!--ここからサイドバー-->
         <div class="sidebar">
-            <a href="../index.html"><img src="../images/logo2.svg" class="margin"></a>
             <div class="sidebarSticky margin">
+                <a href="../index.html"><img src="../images/logo2.svg" class="margin"></a>
                 <!--ここからアコーディオンメニュー-->
                 <div class="accordion">
                     <div class="option">
@@ -49,7 +50,7 @@
                     </div>
                     <div class="option">
                         <input type="checkbox" id="toggle4" class="toggle">
-                        <label class="title" for="toggle4">文章成形</label>
+                        <label class="title" for="toggle4">文書整形</label>
                         <div class="content">
                             <a href="../section3/1.html"><p>パッケージの導入</p></a>
                             <a href="../section3/2.html"><p>目次を作る</p></a>
@@ -102,11 +103,6 @@
                     </div>
                 </div>
                 <!--ここまでアコーディオンメニュー-->
-                <ul class="minilist">
-                    <li>このゼミについて</li>
-                    <li>アンケート</li>
-                    <i class="fa-brands fa-twitter"></i><!--twitterアイコン-->
-                </ul>
             </div>    
         </div>
         <!--ここまでサイドバー-->
@@ -124,14 +120,14 @@
                     
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                         <a itemprop="item" href="title.html">
-                            <span itemprop="name">環境の準備</span>
+                            <span itemprop="name">数式に慣れる</span>
                         </a>
                         <meta itemprop="position" content="2" />
                     </li>
 
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a itemprop="item" href="content.html">
-                            <span itemprop="name">Macの場合</span>
+                        <a itemprop="item" href="1.html">
+                            <span itemprop="name">文字・記号コマンド(基本)</span>
                         </a>
                         <meta itemprop="position" content="3" />
                     </li>
@@ -140,68 +136,149 @@
                 <!--ここから大見出し-->
                 <div class="titleArea">
                     <div class="titleIcon">
-                        <span class="titleNumber">01</span><!--01,02,03などの数字-->
+                        <span class="titleNumber">21</span><!--01,02,03などの数字-->
                     </div>
                     <div class="bigTitle">
-                        Macの場合
+                        文字・記号コマンド(基本)
                         <p style="margin-top: 10px;">
-                            補足説明を書く場所。これは、ダミーです。これは、ダミーです。
-                            これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                            これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                            どんどんコマンドを紹介して練習していきます。このページではプラスマイナス・平方根・不等号・上付き下付き・特殊文字と、なかなか量が多いですが
+                            1つ1つしっかり頭に入れていきましょう！
                         </p>
                     </div>
                 </div>
                 <!--ここまで大見出し-->
+                <h2 id="head1">プラスマイナスと平方根</h2>
                 <p class="explanation">
-                    説明を書く場所。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。説明を書く場所。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                    まず、平方根は\sqrt{**}とすればできます。プラスマイナスは簡単で、複号同順にも対応しています。次の例を見てみましょう。
                 </p>
                 <!--ここからコードブロック-->
                 <div class="codeblock">
                     <!--以下にコードを貼り付けてください　＊スペースはそのまま反映されます-->
-                    <pre><code class="prettyprint linenums">var foo = function (bar) {
-    return bar++;
-};
-                      
-console.log(foo(5));</code></pre>
+                    <pre>
+<code class="prettyprint linenums lang-tex">原点中心の単位円と直線$y=-2x$の交点は
+$(\pm\dfrac{1}{2},\mp\dfrac{\sqrt{3}}{2})$　(複号同順)である。</code></pre>
                 </div>
-                <!--ここまでコードブロック-->
-                <!--ここからポイント枠-->
-                <div class="pointBox">
-                    <div class="pointTitle">
-                        <div>Point</div>
-                    </div>
-                    <hr>
-                    <p>
-                        説明を書く場所。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。説明を書く場所。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。
-                    </p>
+                <p class="imgBox">
+                    <img src="../images/21_1.png">
+                </p>
+                <p class="explanation">
+                    プラスマイナスについては、\pm, \mp によって出力することができます。また、\sqrt{} については次のような汎用性があります。
+                </p>
+                <div class="codeblock">
+                    <!--以下にコードを貼り付けてください　＊スペースはそのまま反映されます-->
+                    <pre>
+<code class="prettyprint linenums lang-tex">$\sqrt{\dfrac{a}{b}}=\dfrac{\sqrt{a}}{\sqrt{b}}$\\
+$\sqrt[3]{5\sqrt{2}-7}=\sqrt{2}-1$</code></pre>
                 </div>
-                <!--ここまでポイント枠-->
+                <p class="imgBox">
+                    <img src="../images/21_2.png">
+                </p>
+                <p class="explanation">
+                    1つ目について、\sqrt{}は自動で分数の大きさに調節してくれることがわかります。<br>
+                    2つ目について、\sqrt[3]{}とすることで3乗根を表すことができます。この3を置き換えればルートの左上に任意の文字列を入れることができます。
+                </p>
+                
+                <h2 id="head2">不等号</h2>
+                <p class="explanation">
+                    不等式は単純にコマンドを覚えてしまえばいけます。
+                </p>
+                <div class="codeblock">
+                    <!--以下にコードを貼り付けてください　＊スペースはそのまま反映されます-->
+                    <pre>
+<code class="prettyprint linenums lang-tex">\usepackage{amssymb} (プリアンブルに)
+不等式$x\geq\dfrac{1}{x}$の解は$-1\leq x<0,1\leq x$である。\\
+$a\leqq b\leqq c$ならば$c\geqq a$である。</code></pre>
+                </div>
+                <p class="imgBox">
+                    <img src="../images/21_3.png">
+                </p>
+                <p class="explanation">
+                    >,< はそのまま打ち込めばよく、下が1本の不等号なら\geq, \leqになります。
+                    高校までの数学でよく使われる下が2本の不等号はqを重ねて\geqq, \leqqになります。これを利用する際は amsmath のように amssymb を読み込んでおく必要があります。
+                </p>
+
+                <h2 id="head3">上付き下付き</h2>
+                <p class="explanation">
+                    累乗や番号を付ける際の上付き下付き文字は ^, _ を用いて表すことができます。これにもルールがあるので見てみましょう。
+                </p>
+                <div class="codeblock">
+                    <!--以下にコードを貼り付けてください　＊スペースはそのまま反映されます-->
+                    <pre>
+<code class="prettyprint linenums lang-tex">$a_n=2^n$による等比数列において、$a_{11}=2^{11}=2048$である。\\
+$\sqrt{2}^{\sqrt{2}}$は無理数か。</code></pre>
+                </div>
+                <p class="imgBox">
+                    <img src="../images/21_4.png">
+                </p>
+                <p class="explanation">
+                    複数文字を上付き下付きにする場合は {　} で囲む必要があります。ここには平方根のようなコマンドも入れることができます。
+                </p>
+
+                <h2 id="head4">特殊文字</h2>
+                <p class="explanation">
+                    そこそこ使うであろうギリシャ文字を紹介します。1文字目を大文字にすればギリシャ文字も大文字になります。
+                </p>
+                <table align="center">
+                    <tr>
+                        <td>\alpha　</td>
+                        <td>\( \alpha\)　</td>
+                        <td>\theta　</td>
+                        <td>\( \theta\)　</td>
+                    </tr>
+                    <tr>
+                        <td>\beta　</td>
+                        <td>\( \beta\)　</td>
+                        <td>\pi　</td>
+                        <td>\( \pi\)　</td>
+                    </tr>
+                    <tr>
+                        <td>\gamma　</td>
+                        <td>\( \gamma\)　</td>
+                        <td>\phi　</td>
+                        <td>\( \phi\)　</td>
+                    </tr>
+                    <tr>
+                        <td>\delta　</td>
+                        <td>\( \delta\)　</td>
+                        <td>\varphi　</td>
+                        <td>\( \varphi\)　</td>
+                    </tr>
+                    <tr>
+                        <td>\Delta　</td>
+                        <td>\( \Delta\)　</td>
+                        <td>\xi　</td>
+                        <td>\( \xi\)　</td>
+                    </tr>
+                    <tr>
+                        <td>\epsilon　</td>
+                        <td>\( \epsilon\)　</td>
+                        <td>\sigma　</td>
+                        <td>\( \sigma\)　</td>
+                    </tr>
+                    <tr>
+                        <td>\varepsilon　</td>
+                        <td>\( \varepsilon\)　</td>
+                        <td>\Sigma　</td>
+                        <td>\( \Sigma\)　</td>
+                    </tr>
+                </table>
+
                 <!--ここから前へ・次へボタン-->
                 <div class="footer">
-                    <a href="../section0/2.html">
+                    <a href="../section1/3.html">
                     <div class="button prev">
                         <i class="fa-solid fa-angle-left arrow"></i><!--矢印-->
                         <div class="character character_prev">
                             <span class="miniTitle">前のページ</span><br>
-                            <span class="buttonTitle">環境の準備</span>
+                            <span class="buttonTitle">実践1</span>
                         </div>
                     </div>
                     </a>
-                    <a href="../section1/2.html">
+                    <a href="../section2/2.html">
                     <div class="button next">
                         <div class="character character_next">
                             <span class="miniTitle">次のページ</span><br>
-                            <span class="buttonTitle">Windowsの場合</span>
+                            <span class="buttonTitle">実践2</span>
                         </div>
                         <i class="fa-solid fa-angle-right arrow"></i><!--矢印-->
                     </div>
@@ -211,9 +288,10 @@ console.log(foo(5));</code></pre>
             </div> 
             <div class="submenu">
                 <ul>
-                    <li>ダミーテキスト</li>
-                    <li>ダミーテキスト</li>
-                    <li>ダミーテキスト</li>
+                    <li><a href="#head1">プラスマイナスと平方根</a></li>
+                    <li><a href="#head2">不等号</a></li>
+                    <li><a href="#head3">上付き下付き</a></li>
+                    <li><a href="#head4">特殊文字</a></li>
                 </ul>
             </div>
         </div>

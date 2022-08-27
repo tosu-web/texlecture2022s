@@ -7,17 +7,18 @@
         <!--fontawesome-->
         <script src="https://kit.fontawesome.com/60ea5b1c05.js" crossorigin="anonymous"></script>
         <!--コードブロック-->
-        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=tex"></script>
+        <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script> 
         <link rel="stylesheet" type="text/css" href="../css/atelier-sulphurpool-dark.css">
         <link rel="stylesheet" type="text/css" href="../css/base.css">
         <link rel="stylesheet" type="text/css" href="../css/content.css">
-        <title>0-1：Macの場合</title>
+        <title>2-3:数式コマンド(基本)</title>
     </head>
     <body>
         <!--ここからサイドバー-->
         <div class="sidebar">
-            <a href="../index.html"><img src="../images/logo2.svg" class="margin"></a>
             <div class="sidebarSticky margin">
+                <a href="../index.html"><img src="../images/logo2.svg" class="margin"></a>
                 <!--ここからアコーディオンメニュー-->
                 <div class="accordion">
                     <div class="option">
@@ -49,7 +50,7 @@
                     </div>
                     <div class="option">
                         <input type="checkbox" id="toggle4" class="toggle">
-                        <label class="title" for="toggle4">文章成形</label>
+                        <label class="title" for="toggle4">文書整形</label>
                         <div class="content">
                             <a href="../section3/1.html"><p>パッケージの導入</p></a>
                             <a href="../section3/2.html"><p>目次を作る</p></a>
@@ -102,11 +103,6 @@
                     </div>
                 </div>
                 <!--ここまでアコーディオンメニュー-->
-                <ul class="minilist">
-                    <li>このゼミについて</li>
-                    <li>アンケート</li>
-                    <i class="fa-brands fa-twitter"></i><!--twitterアイコン-->
-                </ul>
             </div>    
         </div>
         <!--ここまでサイドバー-->
@@ -124,14 +120,14 @@
                     
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                         <a itemprop="item" href="title.html">
-                            <span itemprop="name">環境の準備</span>
+                            <span itemprop="name">数式に慣れる</span>
                         </a>
                         <meta itemprop="position" content="2" />
                     </li>
 
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a itemprop="item" href="content.html">
-                            <span itemprop="name">Macの場合</span>
+                        <a itemprop="item" href="3.html">
+                            <span itemprop="name">数式コマンド(基本)</span>
                         </a>
                         <meta itemprop="position" content="3" />
                     </li>
@@ -140,68 +136,110 @@
                 <!--ここから大見出し-->
                 <div class="titleArea">
                     <div class="titleIcon">
-                        <span class="titleNumber">01</span><!--01,02,03などの数字-->
+                        <span class="titleNumber">23</span><!--01,02,03などの数字-->
                     </div>
                     <div class="bigTitle">
-                        Macの場合
+                        数式コマンド(基本)
                         <p style="margin-top: 10px;">
-                            補足説明を書く場所。これは、ダミーです。これは、ダミーです。
-                            これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                            これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                            続々とコマンドを紹介していきます。三角関数と対数、論理記号を扱い、ある程度は教科書も写せるようにしていきます。
                         </p>
                     </div>
                 </div>
                 <!--ここまで大見出し-->
+                <h2 id="head1">三角関数</h2>
                 <p class="explanation">
-                    説明を書く場所。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。説明を書く場所。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                    普通に数式内でsin, cos, tan と打ち込むと斜体になってしまいます。
+                    三角関数が斜体なのはスタイルとして誤りなので次のようにコマンドを入れます。
                 </p>
                 <!--ここからコードブロック-->
                 <div class="codeblock">
                     <!--以下にコードを貼り付けてください　＊スペースはそのまま反映されます-->
-                    <pre><code class="prettyprint linenums">var foo = function (bar) {
-    return bar++;
-};
-                      
-console.log(foo(5));</code></pre>
+                    <pre>
+<code class="prettyprint linenums lang-tex">$\tan\theta = \dfrac{\sin\theta}{\cos\theta}$\\
+$\sin 2\theta =2\sin\theta\cos\theta$</code></pre>
                 </div>
-                <!--ここまでコードブロック-->
-                <!--ここからポイント枠-->
-                <div class="pointBox">
-                    <div class="pointTitle">
-                        <div>Point</div>
-                    </div>
-                    <hr>
-                    <p>
-                        説明を書く場所。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。説明を書く場所。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。
-                    </p>
+                <p class="imgBox">
+                    <img src="../images/23_1.png">
+                </p>
+                <p class="explanation">
+                    三角関数の周辺コマンドの例としては、角度表記があります。\circ は丸を表すので、次のように肩に乗せれば角度表記にできます。
+                </p>
+                <div class="codeblock">
+                    <!--以下にコードを貼り付けてください　＊スペースはそのまま反映されます-->
+                    <pre>
+<code class="prettyprint linenums lang-tex">$\sin (90^{\circ}-\theta )=\cos\theta$</code></pre>
                 </div>
-                <!--ここまでポイント枠-->
+                <p class="imgBox">
+                    <img src="../images/23_2.png">
+                </p>
+
+                <h2 id="head2">対数</h2>
+                <p class="explanation">
+                    指数は先ほどやったので次は対数です。これもコマンドさえ覚えれば楽なものです。
+                </p>
+                <div class="codeblock">
+                    <!--以下にコードを貼り付けてください　＊スペースはそのまま反映されます-->
+                    <pre>
+<code class="prettyprint linenums lang-tex">$\log MN=\log M+\log N$\\
+$\log _e x=\ln x$</code></pre>
+                </div>
+                <p class="imgBox">
+                    <img src="../images/23_3.png">
+                </p>
+                <p class="explanation">
+                    底をつける際には _ をつけておきます。2文字以上のときは {　} で囲むことに注意です。
+                </p>
+
+                <h2 id="head3">論理記号</h2>
+                <p class="explanation">
+                    高校数学レベルの論理記号は以下の通りです。これは一覧にして紹介します。
+                </p>
+                <table align="center">
+                    <tr>
+                        <td>\cap　</td>
+                        <td>\( \cap\)　</td>
+                        <td>\Leftarrow　</td>
+                        <td>\( \Leftarrow\)　</td>
+                    </tr>
+                    <tr>
+                        <td>\cup　</td>
+                        <td>\( \cup\)　</td>
+                        <td>\Rightarrow　</td>
+                        <td>\( \Rightarrow\)　</td>
+                    </tr>
+                    <tr>
+                        <td>\in　</td>
+                        <td>\( \in\)　</td>
+                        <td>\Leftrightarrow　</td>
+                        <td>\( \Leftrightarrow\)　</td>
+                    </tr>
+                    <tr>
+                        <td>\subset　</td>
+                        <td>\( \subset\)　</td>
+                        <td>\therefore　</td>
+                        <td>\( \therefore\)　</td>
+                    </tr>
+                </table>
+                <p class="explanation">
+                    ただし、矢印については \Leftrightarrow と \leftrightarrow は別物です。
+                </p>
+
                 <!--ここから前へ・次へボタン-->
                 <div class="footer">
-                    <a href="../section0/2.html">
+                    <a href="../section2/2.html">
                     <div class="button prev">
                         <i class="fa-solid fa-angle-left arrow"></i><!--矢印-->
                         <div class="character character_prev">
                             <span class="miniTitle">前のページ</span><br>
-                            <span class="buttonTitle">環境の準備</span>
+                            <span class="buttonTitle">実践2</span>
                         </div>
                     </div>
                     </a>
-                    <a href="../section1/2.html">
+                    <a href="../section2/4.html">
                     <div class="button next">
                         <div class="character character_next">
                             <span class="miniTitle">次のページ</span><br>
-                            <span class="buttonTitle">Windowsの場合</span>
+                            <span class="buttonTitle">実践3</span>
                         </div>
                         <i class="fa-solid fa-angle-right arrow"></i><!--矢印-->
                     </div>
@@ -211,9 +249,9 @@ console.log(foo(5));</code></pre>
             </div> 
             <div class="submenu">
                 <ul>
-                    <li>ダミーテキスト</li>
-                    <li>ダミーテキスト</li>
-                    <li>ダミーテキスト</li>
+                    <li><a href="#head1">三角関数</a></li>
+                    <li><a href="#head2">対数</a></li>
+                    <li><a href="#head3">論理記号</a></li>
                 </ul>
             </div>
         </div>

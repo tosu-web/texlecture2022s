@@ -7,17 +7,17 @@
         <!--fontawesome-->
         <script src="https://kit.fontawesome.com/60ea5b1c05.js" crossorigin="anonymous"></script>
         <!--コードブロック-->
-        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=tex"></script>
         <link rel="stylesheet" type="text/css" href="../css/atelier-sulphurpool-dark.css">
         <link rel="stylesheet" type="text/css" href="../css/base.css">
         <link rel="stylesheet" type="text/css" href="../css/content.css">
-        <title>0-1：Macの場合</title>
+        <title>1-2:数式コマンド(超基本)</title>
     </head>
     <body>
         <!--ここからサイドバー-->
         <div class="sidebar">
-            <a href="../index.html"><img src="../images/logo2.svg" class="margin"></a>
             <div class="sidebarSticky margin">
+                <a href="../index.html"><img src="../images/logo2.svg" class="margin"></a>
                 <!--ここからアコーディオンメニュー-->
                 <div class="accordion">
                     <div class="option">
@@ -49,7 +49,7 @@
                     </div>
                     <div class="option">
                         <input type="checkbox" id="toggle4" class="toggle">
-                        <label class="title" for="toggle4">文章成形</label>
+                        <label class="title" for="toggle4">文書整形</label>
                         <div class="content">
                             <a href="../section3/1.html"><p>パッケージの導入</p></a>
                             <a href="../section3/2.html"><p>目次を作る</p></a>
@@ -102,11 +102,6 @@
                     </div>
                 </div>
                 <!--ここまでアコーディオンメニュー-->
-                <ul class="minilist">
-                    <li>このゼミについて</li>
-                    <li>アンケート</li>
-                    <i class="fa-brands fa-twitter"></i><!--twitterアイコン-->
-                </ul>
             </div>    
         </div>
         <!--ここまでサイドバー-->
@@ -124,14 +119,14 @@
                     
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                         <a itemprop="item" href="title.html">
-                            <span itemprop="name">環境の準備</span>
+                            <span itemprop="name">はじめてのTeX文書</span>
                         </a>
                         <meta itemprop="position" content="2" />
                     </li>
 
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a itemprop="item" href="content.html">
-                            <span itemprop="name">Macの場合</span>
+                        <a itemprop="item" href="2.html">
+                            <span itemprop="name">数式コマンド(超基本)</span>
                         </a>
                         <meta itemprop="position" content="3" />
                     </li>
@@ -140,68 +135,109 @@
                 <!--ここから大見出し-->
                 <div class="titleArea">
                     <div class="titleIcon">
-                        <span class="titleNumber">01</span><!--01,02,03などの数字-->
+                        <span class="titleNumber">12</span><!--01,02,03などの数字-->
                     </div>
                     <div class="bigTitle">
-                        Macの場合
+                        数式コマンド(超基本)
                         <p style="margin-top: 10px;">
-                            補足説明を書く場所。これは、ダミーです。これは、ダミーです。
-                            これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                            これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                            早速数式を書いていきます。コマンドはいくつもありますが、どんどん使って慣れていきましょう！
                         </p>
                     </div>
                 </div>
                 <!--ここまで大見出し-->
+                <h2 id="head1">四則演算</h2>
                 <p class="explanation">
-                    説明を書く場所。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。説明を書く場所。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                    基本の基本、四則演算を書けるようになっておきます。もちろん\begin{document}と\end{document}の間に書くことを忘れずに。<br>
+                    また、数式を書く際には「<b>$　$</b>」で囲むことに注意です。次のコード例と結果を見てみましょう。
                 </p>
                 <!--ここからコードブロック-->
                 <div class="codeblock">
                     <!--以下にコードを貼り付けてください　＊スペースはそのまま反映されます-->
-                    <pre><code class="prettyprint linenums">var foo = function (bar) {
-    return bar++;
-};
-                      
-console.log(foo(5));</code></pre>
+                    <pre>
+<code class="prettyprint linenums lang-tex">$ 3+5-2=6$\\
+$ 6\times 2\div 3 = 4$</code></pre>
                 </div>
-                <!--ここまでコードブロック-->
+                <p class="imgBox">
+                    <img src="../images/12_1.png">
+                </p>
+                <p class="explanation">
+                    + や - , = はそのままでOK。ただし、×・÷はそれぞれ\times ,\div を使います。
+                </p>
                 <!--ここからポイント枠-->
-                <div class="pointBox">
+                <div class="cautionBox">
                     <div class="pointTitle">
-                        <div>Point</div>
+                        <div>Caution</div>
                     </div>
                     <hr>
                     <p>
-                        説明を書く場所。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。説明を書く場所。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。
+                        \times ,\div の後にスペースが入っていますが、これは必要なものです。
+                        バックスラッシュ(\)または円マークの後は TeX でコマンドとして認識され、\times2 と書くと times2 までがコマンド名と認識されてしまいます。
+                        バックスラッシュやアンダーバーなどがあればそこでコマンド名としての認識は完了しますが、原則としてスペースを空ける癖をつけておきましょう。
+                        なお、半角スペースは TeX ファイルでは無視されて pdf には反映されません。
                     </p>
                 </div>
                 <!--ここまでポイント枠-->
+                
+                <h2 id="head2">分数</h2>
+                <p class="explanation">
+                    次に分数です。これには3つの形式があります。<br>
+                    ここで注意なのは、 amsmath というパッケージを読み込む必要があります。
+                    そのためにはプリアンブル(\begin{document}の前)\usepackage{amsmath}と書き込んでおく必要があります。(usepackageについては後で詳しく解説します。)
+                </p>
+                <div class="codeblock">
+                    <!--以下にコードを貼り付けてください　＊スペースはそのまま反映されます-->
+                    <pre>
+<code class="prettyprint linenums lang-tex">\documentclass{ltjsarticle}
+\usepackage{amsmath}
+    
+\begin{document}
+\noindent
+$\frac{1}{2}+\frac{1}{3}+\frac{1}{6}=1$\\
+$1+\dfrac{1}{2}+\dfrac{1}{3}+...=-\dfrac{1}{12}$\\
+$1+\cfrac{1}{2}+\cfrac{1}{3}+...=-\cfrac{1}{12}$
+\end{document}</code></pre>
+                </div>
+                <p class="imgBox">
+                    <img src="../images/12_2.png">
+                </p>
+                <p class="explanation">
+                    これらは1つ目のカッコに分子を、2つ目のカッコに分母を入力します。\frac ,\dfrac, \cfracの違いとしてはそのサイズにあります。
+                    \frac は文と同じ大きさで、次の画像のそうなサイズ差があります。
+                </p>
+                <p class="imgBox">
+                    <img src="../images/12_3.png">
+                </p>
+                <p class="explanation">
+                    サイズ差を利用して、次のように分数を重ねることもできます。
+                </p>
+                <div class="codeblock">
+                    <pre>
+<code class="prettyprint linenums lang-tex">$\dfrac{36}{11}$を正則連分数展開すると
+$\dfrac{36}{11}=3+\cfrac{1}{3+\dfrac{1}{1+\frac{1}{2}}}$となる。</code></pre>
+                </div>
+                <p class="imgBox">
+                    <img src="../images/12_4.png">
+                </p>
+                <p class="explanation">
+                    式が長くなると確認が大変ですが、左カッコと右カッコの数が同じになるよう注意しましょう。
+                </p>
+
                 <!--ここから前へ・次へボタン-->
                 <div class="footer">
-                    <a href="../section0/2.html">
+                    <a href="../section1/1.html">
                     <div class="button prev">
                         <i class="fa-solid fa-angle-left arrow"></i><!--矢印-->
                         <div class="character character_prev">
                             <span class="miniTitle">前のページ</span><br>
-                            <span class="buttonTitle">環境の準備</span>
+                            <span class="buttonTitle">基本構造</span>
                         </div>
                     </div>
                     </a>
-                    <a href="../section1/2.html">
+                    <a href="../section1/3.html">
                     <div class="button next">
                         <div class="character character_next">
                             <span class="miniTitle">次のページ</span><br>
-                            <span class="buttonTitle">Windowsの場合</span>
+                            <span class="buttonTitle">実践1</span>
                         </div>
                         <i class="fa-solid fa-angle-right arrow"></i><!--矢印-->
                     </div>
@@ -211,9 +247,8 @@ console.log(foo(5));</code></pre>
             </div> 
             <div class="submenu">
                 <ul>
-                    <li>ダミーテキスト</li>
-                    <li>ダミーテキスト</li>
-                    <li>ダミーテキスト</li>
+                    <li><a href="#head1">四則演算</a></li>
+                    <li><a href="#head2">分数</a></li>
                 </ul>
             </div>
         </div>

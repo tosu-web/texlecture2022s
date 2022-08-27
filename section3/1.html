@@ -7,17 +7,18 @@
         <!--fontawesome-->
         <script src="https://kit.fontawesome.com/60ea5b1c05.js" crossorigin="anonymous"></script>
         <!--コードブロック-->
-        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=tex"></script>
+        <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script> 
         <link rel="stylesheet" type="text/css" href="../css/atelier-sulphurpool-dark.css">
         <link rel="stylesheet" type="text/css" href="../css/base.css">
         <link rel="stylesheet" type="text/css" href="../css/content.css">
-        <title>0-1：Macの場合</title>
+        <title>3-1:パッケージの導入</title>
     </head>
     <body>
         <!--ここからサイドバー-->
         <div class="sidebar">
-            <a href="../index.html"><img src="../images/logo2.svg" class="margin"></a>
             <div class="sidebarSticky margin">
+                <a href="../index.html"><img src="../images/logo2.svg" class="margin"></a>
                 <!--ここからアコーディオンメニュー-->
                 <div class="accordion">
                     <div class="option">
@@ -49,7 +50,7 @@
                     </div>
                     <div class="option">
                         <input type="checkbox" id="toggle4" class="toggle">
-                        <label class="title" for="toggle4">文章成形</label>
+                        <label class="title" for="toggle4">文書整形</label>
                         <div class="content">
                             <a href="../section3/1.html"><p>パッケージの導入</p></a>
                             <a href="../section3/2.html"><p>目次を作る</p></a>
@@ -102,11 +103,6 @@
                     </div>
                 </div>
                 <!--ここまでアコーディオンメニュー-->
-                <ul class="minilist">
-                    <li>このゼミについて</li>
-                    <li>アンケート</li>
-                    <i class="fa-brands fa-twitter"></i><!--twitterアイコン-->
-                </ul>
             </div>    
         </div>
         <!--ここまでサイドバー-->
@@ -124,14 +120,14 @@
                     
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                         <a itemprop="item" href="title.html">
-                            <span itemprop="name">環境の準備</span>
+                            <span itemprop="name">文書整形</span>
                         </a>
                         <meta itemprop="position" content="2" />
                     </li>
 
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a itemprop="item" href="content.html">
-                            <span itemprop="name">Macの場合</span>
+                        <a itemprop="item" href="1.html">
+                            <span itemprop="name">パッケージの導入</span>
                         </a>
                         <meta itemprop="position" content="3" />
                     </li>
@@ -140,68 +136,83 @@
                 <!--ここから大見出し-->
                 <div class="titleArea">
                     <div class="titleIcon">
-                        <span class="titleNumber">01</span><!--01,02,03などの数字-->
+                        <span class="titleNumber">31</span><!--01,02,03などの数字-->
                     </div>
                     <div class="bigTitle">
-                        Macの場合
+                        パッケージの導入
                         <p style="margin-top: 10px;">
-                            補足説明を書く場所。これは、ダミーです。これは、ダミーです。
-                            これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                            これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                            ここからは数式に限らず文書全体の整形をしていきます。便利なコマンドを追加してくれるパッケージの導入や、さまざまなパッケージの例を紹介します。
                         </p>
                     </div>
                 </div>
                 <!--ここまで大見出し-->
+                <h2 id="head1">パッケージの導入方法</h2>
+                <h3>標準パッケージ</h3>
                 <p class="explanation">
-                    説明を書く場所。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。説明を書く場所。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                    (特に正式な呼び名はありませんが、)ここでの標準パッケージは次の項のようなダウンロードを必要としないパッケージを指すことにします。
+                     TeX をインストールした時点でいくつかのパッケージはダウンロードされており、今までやった例のように \usepackage するだけで利用することができます。
                 </p>
-                <!--ここからコードブロック-->
                 <div class="codeblock">
                     <!--以下にコードを貼り付けてください　＊スペースはそのまま反映されます-->
-                    <pre><code class="prettyprint linenums">var foo = function (bar) {
-    return bar++;
-};
-                      
-console.log(foo(5));</code></pre>
+                    <pre>
+<code class="prettyprint linenums lang-tex">\usepackage{amsmath}
+\usepackage{amssymb}</code></pre>
                 </div>
-                <!--ここまでコードブロック-->
-                <!--ここからポイント枠-->
-                <div class="pointBox">
-                    <div class="pointTitle">
-                        <div>Point</div>
-                    </div>
-                    <hr>
-                    <p>
-                        説明を書く場所。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。説明を書く場所。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。
-                    </p>
-                </div>
-                <!--ここまでポイント枠-->
+                <h3>パッケージのダウンロード</h3>
+                <p class="explanation">
+                    標準パッケージでないものについては、自分でダウンロードしてしかるべき設定をする必要があります。
+                    パッケージは多くのものを集めた <a href="https://www.ctan.org/">CTAN</a> や各パッケージの配布サイトからダウンロードすることができます。
+                </p>
+                <p class="explanation">
+                    ここから使えるようにする方法を軽く紹介しますが、パソコンが苦手な場合少し難しいかもしれません。<br>
+                    以下、パッケージを表す .sty ファイルがある前提で解説します。 TeX は任意の場所にあるパッケージを探し出して利用できるわけではなく、
+                    指定された箇所にあるパッケージしか読み込むことはできません。
+                </p>
+
+                <p class="explanation">
+                    最終的に .tex ファイル上で利用するためには、 ***.sty ならプリアンブルに \usepackage{***} とすればよいです。
+                </p>
+                
+                <h2 id="head2">パッケージの例</h2>
+                <p class="explanation">
+                    それでは、有名なパッケージをいくつか紹介します。今後使うパッケージについてはその時にコマンドを解説しますが、
+                    原則として使い方は「tex パッケージ名」などで検索して調べてみるようにしましょう。
+                </p>
+                <ul>
+                    <li>
+                        <b>physics</b><br>
+                        標準パッケージ。主に微分積分や行列など、物理で使う数学の表記に便利なパッケージです。
+                        ただし、デフォルトであるコマンドに干渉して変更してしまうため、コマンドを元々機能していた通りに使えなくなるものもあります。
+                    </li>
+                    <li>
+                        <b>mhchem</b><br>
+                        標準パッケージ。(バージョン指定が必要)
+                        化学式や簡素な構造式を、簡単かつ綺麗に作ることができます。複雑な構造式も chemfig パッケージなどで作れないことはないですが、
+                        TeX はあまり図の作成が得意ではないので他のツールで画像を作成した方が良いです。
+                    </li>
+                    <li>
+                        <b>ceo</b><br>
+                        ダウンロードが必要。(設定方法は<a href="https://konoyonohana.blog.fc2.com/blog-entry-118.html">このページ</a>に記載)
+                        「大学への数学」などで使われている記号を使うことができます。これも physics 同様に干渉してしまうことがあるので注意が必要です。
+                    </li>
+                </ul>
+
                 <!--ここから前へ・次へボタン-->
                 <div class="footer">
-                    <a href="../section0/2.html">
+                    <a href="../section2/4.html">
                     <div class="button prev">
                         <i class="fa-solid fa-angle-left arrow"></i><!--矢印-->
                         <div class="character character_prev">
                             <span class="miniTitle">前のページ</span><br>
-                            <span class="buttonTitle">環境の準備</span>
+                            <span class="buttonTitle">実践3</span>
                         </div>
                     </div>
                     </a>
-                    <a href="../section1/2.html">
+                    <a href="../section3/2.html">
                     <div class="button next">
                         <div class="character character_next">
                             <span class="miniTitle">次のページ</span><br>
-                            <span class="buttonTitle">Windowsの場合</span>
+                            <span class="buttonTitle">目次を作る</span>
                         </div>
                         <i class="fa-solid fa-angle-right arrow"></i><!--矢印-->
                     </div>
@@ -211,9 +222,8 @@ console.log(foo(5));</code></pre>
             </div> 
             <div class="submenu">
                 <ul>
-                    <li>ダミーテキスト</li>
-                    <li>ダミーテキスト</li>
-                    <li>ダミーテキスト</li>
+                    <li><a href="#head1">パッケージの導入方法</a></li>
+                    <li><a href="#head2">パッケージの例</a></li>
                 </ul>
             </div>
         </div>

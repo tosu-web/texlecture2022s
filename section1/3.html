@@ -7,17 +7,17 @@
         <!--fontawesome-->
         <script src="https://kit.fontawesome.com/60ea5b1c05.js" crossorigin="anonymous"></script>
         <!--コードブロック-->
-        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=tex"></script>
         <link rel="stylesheet" type="text/css" href="../css/atelier-sulphurpool-dark.css">
         <link rel="stylesheet" type="text/css" href="../css/base.css">
         <link rel="stylesheet" type="text/css" href="../css/content.css">
-        <title>0-1：Macの場合</title>
+        <title>1-3:実践1 (分数の四則演算)</title>
     </head>
     <body>
         <!--ここからサイドバー-->
         <div class="sidebar">
-            <a href="../index.html"><img src="../images/logo2.svg" class="margin"></a>
             <div class="sidebarSticky margin">
+                <a href="../index.html"><img src="../images/logo2.svg" class="margin"></a>
                 <!--ここからアコーディオンメニュー-->
                 <div class="accordion">
                     <div class="option">
@@ -49,7 +49,7 @@
                     </div>
                     <div class="option">
                         <input type="checkbox" id="toggle4" class="toggle">
-                        <label class="title" for="toggle4">文章成形</label>
+                        <label class="title" for="toggle4">文書整形</label>
                         <div class="content">
                             <a href="../section3/1.html"><p>パッケージの導入</p></a>
                             <a href="../section3/2.html"><p>目次を作る</p></a>
@@ -102,11 +102,6 @@
                     </div>
                 </div>
                 <!--ここまでアコーディオンメニュー-->
-                <ul class="minilist">
-                    <li>このゼミについて</li>
-                    <li>アンケート</li>
-                    <i class="fa-brands fa-twitter"></i><!--twitterアイコン-->
-                </ul>
             </div>    
         </div>
         <!--ここまでサイドバー-->
@@ -124,14 +119,14 @@
                     
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                         <a itemprop="item" href="title.html">
-                            <span itemprop="name">環境の準備</span>
+                            <span itemprop="name">はじめてのTeX文書</span>
                         </a>
                         <meta itemprop="position" content="2" />
                     </li>
 
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a itemprop="item" href="content.html">
-                            <span itemprop="name">Macの場合</span>
+                        <a itemprop="item" href="3.html">
+                            <span itemprop="name">実践1 分数の四則演算</span>
                         </a>
                         <meta itemprop="position" content="3" />
                     </li>
@@ -140,68 +135,71 @@
                 <!--ここから大見出し-->
                 <div class="titleArea">
                     <div class="titleIcon">
-                        <span class="titleNumber">01</span><!--01,02,03などの数字-->
+                        <span class="titleNumber">13</span><!--01,02,03などの数字-->
                     </div>
                     <div class="bigTitle">
-                        Macの場合
+                        実践1 分数の四則演算
                         <p style="margin-top: 10px;">
-                            補足説明を書く場所。これは、ダミーです。これは、ダミーです。
-                            これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                            これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                            TeX は慣れが大事なので、たくさん練習をしていきます。基本的にはテキスト等を写していくとよいでしょう。ここではいくつか問題を出します。
+                            問題は、★の数によってレベルの目安をつけています。
                         </p>
                     </div>
                 </div>
                 <!--ここまで大見出し-->
-                <p class="explanation">
-                    説明を書く場所。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。説明を書く場所。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                <h2 id="head1">問題</h2>
+                <h3>問題1-1 (★)</h3>
+                次の画像を再現せよ。
+                <p class="imgBox">
+                    <img src="../images/13_1.png">
                 </p>
-                <!--ここからコードブロック-->
+                <h3>問題1-2 (★)</h3>
+                次の画像を再現せよ。(改行位置は異なっていてよい。)
+                <p class="imgBox">
+                    <img src="../images/13_2.png">
+                </p>
+                <h3>問題1-3 (★★★)</h3>
+                次の問題に対する解説を作成せよ。
+                <p class="imgBox">
+                    <img src="../images/13_3.png">
+                </p>
+
+                <br>
+                <h2 id="head2">解答例</h2>
+                <h3>解答例1-1</h3>
                 <div class="codeblock">
                     <!--以下にコードを貼り付けてください　＊スペースはそのまま反映されます-->
-                    <pre><code class="prettyprint linenums">var foo = function (bar) {
-    return bar++;
-};
-                      
-console.log(foo(5));</code></pre>
+                    <pre>
+<code class="prettyprint linenums lang-tex">$f(x)=\dfrac{2}{x}$とすると、
+$\dfrac{f(2)}{f(4)}=\dfrac{1}{\frac{1}{2}}=2$であり、
+$\dfrac{f(2)}{f(8)+f(8)}=\dfrac{1}{\frac{1}{4}+\frac{1}{4}}=2$でもある。</code></pre>
                 </div>
-                <!--ここまでコードブロック-->
-                <!--ここからポイント枠-->
-                <div class="pointBox">
-                    <div class="pointTitle">
-                        <div>Point</div>
-                    </div>
-                    <hr>
-                    <p>
-                        説明を書く場所。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。説明を書く場所。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。
-                    </p>
+                <h3>解答例1-2</h3>
+                <div class="codeblock">
+                    <!--以下にコードを貼り付けてください　＊スペースはそのまま反映されます-->
+                    <pre>
+<code class="prettyprint linenums lang-tex">$S(k)=\dfrac{1}{1\times 2}+\dfrac{1}{2\times 3}+...+\dfrac{1}{k(k+1)}$
+とすると、$S(k)=1-\dfrac{1}{2}+\dfrac{1}{2}-...-\dfrac{1}{k+1}=1-\dfrac{1}{k+1}$
+なので数列$S(k)$の値は1に近づく。</code></pre>
                 </div>
-                <!--ここまでポイント枠-->
+                <h3>解答例1-3</h3>
+                (製作中...)
+
                 <!--ここから前へ・次へボタン-->
                 <div class="footer">
-                    <a href="../section0/2.html">
+                    <a href="../section1/2.html">
                     <div class="button prev">
                         <i class="fa-solid fa-angle-left arrow"></i><!--矢印-->
                         <div class="character character_prev">
                             <span class="miniTitle">前のページ</span><br>
-                            <span class="buttonTitle">環境の準備</span>
+                            <span class="buttonTitle">数式(超基本)</span>
                         </div>
                     </div>
                     </a>
-                    <a href="../section1/2.html">
+                    <a href="../section2/1.html">
                     <div class="button next">
                         <div class="character character_next">
                             <span class="miniTitle">次のページ</span><br>
-                            <span class="buttonTitle">Windowsの場合</span>
+                            <span class="buttonTitle">文字・記号(基本)</span>
                         </div>
                         <i class="fa-solid fa-angle-right arrow"></i><!--矢印-->
                     </div>
@@ -211,9 +209,8 @@ console.log(foo(5));</code></pre>
             </div> 
             <div class="submenu">
                 <ul>
-                    <li>ダミーテキスト</li>
-                    <li>ダミーテキスト</li>
-                    <li>ダミーテキスト</li>
+                    <li><a href="#head1">問題</a></li>
+                    <li><a href="#head2">解答例</a></li>
                 </ul>
             </div>
         </div>

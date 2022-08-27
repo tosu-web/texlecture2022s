@@ -1,0 +1,3 @@
+\contentsline {part}{第I部\hspace {1\zw }ぱーと}{1}{}%
+\contentsline {section}{\numberline {1}せくしょん}{1}{}%
+\contentsline {subsection}{\numberline {1.1}さぶせくしょん}{1}{}%

@@ -28,6 +28,11 @@
     display: inline-block;
     margin-bottom: 1.3em;
 }
+.tile a {
+    color: #ffffff;
+    text-decoration:none;
+}
+
 .tileNumber:before{/*数字の下線*/
   content: '';
   position: absolute;
