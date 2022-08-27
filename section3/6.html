@@ -7,17 +7,18 @@
         <!--fontawesome-->
         <script src="https://kit.fontawesome.com/60ea5b1c05.js" crossorigin="anonymous"></script>
         <!--コードブロック-->
-        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=tex"></script>
+        <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script> 
         <link rel="stylesheet" type="text/css" href="../css/atelier-sulphurpool-dark.css">
         <link rel="stylesheet" type="text/css" href="../css/base.css">
         <link rel="stylesheet" type="text/css" href="../css/content.css">
-        <title>0-1：Macの場合</title>
+        <title>3-6:数式の中央揃えと\displaystyle</title>
     </head>
     <body>
         <!--ここからサイドバー-->
         <div class="sidebar">
-            <a href="../index.html"><img src="../images/logo2.svg" class="margin"></a>
             <div class="sidebarSticky margin">
+                <a href="../index.html"><img src="../images/logo2.svg" class="margin"></a>
                 <!--ここからアコーディオンメニュー-->
                 <div class="accordion">
                     <div class="option">
@@ -49,7 +50,7 @@
                     </div>
                     <div class="option">
                         <input type="checkbox" id="toggle4" class="toggle">
-                        <label class="title" for="toggle4">文章成形</label>
+                        <label class="title" for="toggle4">文書整形</label>
                         <div class="content">
                             <a href="../section3/1.html"><p>パッケージの導入</p></a>
                             <a href="../section3/2.html"><p>目次を作る</p></a>
@@ -102,11 +103,6 @@
                     </div>
                 </div>
                 <!--ここまでアコーディオンメニュー-->
-                <ul class="minilist">
-                    <li>このゼミについて</li>
-                    <li>アンケート</li>
-                    <i class="fa-brands fa-twitter"></i><!--twitterアイコン-->
-                </ul>
             </div>    
         </div>
         <!--ここまでサイドバー-->
@@ -124,14 +120,14 @@
                     
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                         <a itemprop="item" href="title.html">
-                            <span itemprop="name">環境の準備</span>
+                            <span itemprop="name">文書整形</span>
                         </a>
                         <meta itemprop="position" content="2" />
                     </li>
 
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a itemprop="item" href="content.html">
-                            <span itemprop="name">Macの場合</span>
+                        <a itemprop="item" href="6.html">
+                            <span itemprop="name">数式の中央揃えと\displaystyle</span>
                         </a>
                         <meta itemprop="position" content="3" />
                     </li>
@@ -140,68 +136,114 @@
                 <!--ここから大見出し-->
                 <div class="titleArea">
                     <div class="titleIcon">
-                        <span class="titleNumber">01</span><!--01,02,03などの数字-->
+                        <span class="titleNumber">36</span><!--01,02,03などの数字-->
                     </div>
                     <div class="bigTitle">
-                        Macの場合
+                        数式の中央揃えと\displaystyle
                         <p style="margin-top: 10px;">
-                            補足説明を書く場所。これは、ダミーです。これは、ダミーです。
-                            これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                            これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                            Word で数式を使った人は経験あるかもしれませんが、数式には文中形式と独立形式があります。
+                            多くのフォーマルな文書の場合独立形式が使われます。
+                            文中で数式を使うとごちゃごちゃしてしまう場合は積極的に独立形式を使っていきましょう。
                         </p>
                     </div>
                 </div>
                 <!--ここまで大見出し-->
+                <h2 id="head1">数式の中央揃え</h2>
                 <p class="explanation">
-                    説明を書く場所。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。説明を書く場所。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                    数式の中央揃えはいくつかの方法で行うことができます。
+                    1つは文章ごと中央揃えしてしまう方法で、2つ目は数式を中央揃えするものです。まとめて紹介します。
                 </p>
-                <!--ここからコードブロック-->
                 <div class="codeblock">
-                    <!--以下にコードを貼り付けてください　＊スペースはそのまま反映されます-->
-                    <pre><code class="prettyprint linenums">var foo = function (bar) {
-    return bar++;
-};
-                      
-console.log(foo(5));</code></pre>
+                    <pre>
+<code class="prettyprint linenums lang-tex">\begin{center}
+(1つ目の方法)　$e^{ix}=\cos x+i\sin x$
+\end{center}
+(2つ目の方法)　$$e^{ix}=\cos x+i\sin x$$</code></pre>
                 </div>
-                <!--ここまでコードブロック-->
-                <!--ここからポイント枠-->
-                <div class="pointBox">
-                    <div class="pointTitle">
-                        <div>Point</div>
-                    </div>
-                    <hr>
-                    <p>
-                        説明を書く場所。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。説明を書く場所。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。
-                    </p>
+                <p class="imgBox">
+                    <img src="../images/36_1.png">
+                </p>
+                <p class="explanation">
+                    1つ目の方法では center のブロック内をまとめてセンタリングされています。
+                    一方で \$\$...\$\$ で囲んだ2つ目の方法ではその中の数式だけセンタリングされます。
+                </p>
+
+                <h2 id="head2">文中形式と独立形式</h2>
+                <p class="explanation">
+                    先ほど紹介した例ではいずれも数式が中央揃えされましたが、それぞれの表示が異なる場合があります。
+                    次の例を見てみましょう。
+                </p>
+                <div class="codeblock">
+                    <pre>
+<code class="prettyprint linenums lang-tex">同じfracでも文中は$\frac{a}{b}$で独立形式は$$\frac{a}{b}$$</code></pre>
                 </div>
-                <!--ここまでポイント枠-->
+                <p class="imgBox">
+                    <img src="../images/36_2.png">
+                </p>
+                <p class="explanation">
+                    同じ \frac でも独立形式のときは大きくなっています。実はこれは、独立形式であるときに数式のスタイルが
+                    <b>ディスプレイスタイル</b>になっていて、その中での \frac は \dfrac と同じ大きさになります。
+                </p>
+                <p class="explanation">
+                    次のセクションで専門的な数式や大型演算子を扱うときに再び登場しますが、
+                     \frac のように文中形式と独立形式で表示が異なるものは多くあります。
+                </p>
+                <p class="explanation">
+                    文中でも独立形式の表示をさせたい場合は次のように \displaystyle をつけます。(この場合なら素直に \dfrac をやれという話ですが...)
+                </p>
+                <div class="codeblock">
+                    <pre>
+<code class="prettyprint linenums lang-tex">fracの文中形式$\frac{a}{b}$でもうまくやれば$\displaystyle\frac{a}{b}$</code></pre>
+                </div>
+                <p class="imgBox">
+                    <img src="../images/36_3.png">
+                </p>
+                <p class="explanation">
+                    また、独立形式の中で普通の文を書こうとすると、英文字がイタリックになってしまうという問題があります。
+                    このときには \mathrm を使うことで解決できます。
+                </p>
+                <div class="codeblock">
+                    <pre>
+<code class="prettyprint linenums lang-tex">$$iphone の camera の数多すぎ$$
+$$\mathrm{iphone} の camera の数多すぎ$$</code></pre>
+                </div>
+                <p class="imgBox">
+                    <img src="../images/36_4.png">
+                </p>
+
+                <h2 id="head3">カッコのサイズ調整</h2>
+                <p class="explanation">
+                    数式のサイズが変わるのと同時に、カッコの大きさも調節する必要があります。
+                </p>
+                <div class="codeblock">
+                    <pre>
+<code class="prettyprint linenums lang-tex">$$\left\{ \left( \dfrac{1}{2}+x\right) +y \right\}$$</code></pre>
+                </div>
+                <p class="imgBox">
+                    <img src="../images/36_5.png">
+                </p>
+                <p class="explanation">
+                    \left( \right) のようにすることで、丸かっこの大きさが自動調節されます。
+                    ここで注意が必要なのは、{　} は元々コマンドの引数(\frac の分母分子など)を認識するための符号なので
+                    文字として出力するためには\{　\} としなければならない点です。
+                </p>
+
                 <!--ここから前へ・次へボタン-->
                 <div class="footer">
-                    <a href="../section0/2.html">
+                    <a href="../section3/5.html">
                     <div class="button prev">
                         <i class="fa-solid fa-angle-left arrow"></i><!--矢印-->
                         <div class="character character_prev">
                             <span class="miniTitle">前のページ</span><br>
-                            <span class="buttonTitle">環境の準備</span>
+                            <span class="buttonTitle">表を作る</span>
                         </div>
                     </div>
                     </a>
-                    <a href="../section1/2.html">
+                    <a href="../section3/7.html">
                     <div class="button next">
                         <div class="character character_next">
                             <span class="miniTitle">次のページ</span><br>
-                            <span class="buttonTitle">Windowsの場合</span>
+                            <span class="buttonTitle">実践4</span>
                         </div>
                         <i class="fa-solid fa-angle-right arrow"></i><!--矢印-->
                     </div>
@@ -211,9 +253,9 @@ console.log(foo(5));</code></pre>
             </div> 
             <div class="submenu">
                 <ul>
-                    <li>ダミーテキスト</li>
-                    <li>ダミーテキスト</li>
-                    <li>ダミーテキスト</li>
+                    <li><a href="#head1">数式の中央揃え</a></li>
+                    <li><a href="#head2">文中形式と独立形式</a></li>
+                    <li><a href="#head3">カッコのサイズ調整</a></li>
                 </ul>
             </div>
         </div>

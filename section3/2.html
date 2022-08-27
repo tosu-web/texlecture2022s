@@ -7,17 +7,18 @@
         <!--fontawesome-->
         <script src="https://kit.fontawesome.com/60ea5b1c05.js" crossorigin="anonymous"></script>
         <!--コードブロック-->
-        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=tex"></script>
+        <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script> 
         <link rel="stylesheet" type="text/css" href="../css/atelier-sulphurpool-dark.css">
         <link rel="stylesheet" type="text/css" href="../css/base.css">
         <link rel="stylesheet" type="text/css" href="../css/content.css">
-        <title>0-1：Macの場合</title>
+        <title>3-2:目次を作る</title>
     </head>
     <body>
         <!--ここからサイドバー-->
         <div class="sidebar">
-            <a href="../index.html"><img src="../images/logo2.svg" class="margin"></a>
             <div class="sidebarSticky margin">
+                <a href="../index.html"><img src="../images/logo2.svg" class="margin"></a>
                 <!--ここからアコーディオンメニュー-->
                 <div class="accordion">
                     <div class="option">
@@ -49,7 +50,7 @@
                     </div>
                     <div class="option">
                         <input type="checkbox" id="toggle4" class="toggle">
-                        <label class="title" for="toggle4">文章成形</label>
+                        <label class="title" for="toggle4">文書整形</label>
                         <div class="content">
                             <a href="../section3/1.html"><p>パッケージの導入</p></a>
                             <a href="../section3/2.html"><p>目次を作る</p></a>
@@ -102,11 +103,6 @@
                     </div>
                 </div>
                 <!--ここまでアコーディオンメニュー-->
-                <ul class="minilist">
-                    <li>このゼミについて</li>
-                    <li>アンケート</li>
-                    <i class="fa-brands fa-twitter"></i><!--twitterアイコン-->
-                </ul>
             </div>    
         </div>
         <!--ここまでサイドバー-->
@@ -124,14 +120,14 @@
                     
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                         <a itemprop="item" href="title.html">
-                            <span itemprop="name">環境の準備</span>
+                            <span itemprop="name">文書整形</span>
                         </a>
                         <meta itemprop="position" content="2" />
                     </li>
 
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a itemprop="item" href="content.html">
-                            <span itemprop="name">Macの場合</span>
+                        <a itemprop="item" href="2.html">
+                            <span itemprop="name">目次を作る</span>
                         </a>
                         <meta itemprop="position" content="3" />
                     </li>
@@ -140,68 +136,142 @@
                 <!--ここから大見出し-->
                 <div class="titleArea">
                     <div class="titleIcon">
-                        <span class="titleNumber">01</span><!--01,02,03などの数字-->
+                        <span class="titleNumber">32</span><!--01,02,03などの数字-->
                     </div>
                     <div class="bigTitle">
-                        Macの場合
+                        目次を作る
                         <p style="margin-top: 10px;">
-                            補足説明を書く場所。これは、ダミーです。これは、ダミーです。
-                            これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                            これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                            次に目次を作成する方法を紹介します。章立て・目次を作ると長い文書になったときの利便性が増すので積極的に使っていきましょう！
                         </p>
                     </div>
                 </div>
                 <!--ここまで大見出し-->
+                <h2 id="head1">章立て</h2>
                 <p class="explanation">
-                    説明を書く場所。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。説明を書く場所。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                    TeX 文書では章立てを作ることができます。
                 </p>
-                <!--ここからコードブロック-->
                 <div class="codeblock">
-                    <!--以下にコードを貼り付けてください　＊スペースはそのまま反映されます-->
-                    <pre><code class="prettyprint linenums">var foo = function (bar) {
-    return bar++;
-};
-                      
-console.log(foo(5));</code></pre>
+                    <pre>
+<code class="prettyprint linenums lang-tex">\part{ぱーと}
+% \chapter{ちゃぷたー}
+\section{せくしょん}
+\subsection{さぶせくしょん}
+ほげほげほげほげほげほげほげほげ</code></pre>
                 </div>
-                <!--ここまでコードブロック-->
-                <!--ここからポイント枠-->
+                <p class="imgBox">
+                    <img src="../images/32_1.png">
+                </p>
+                <p class="explanation">
+                    コード例のように ltjsarticle クラスでは \part, \section, \subsection を使うことができます。<br>
+                    また、このような章区切りの後は必ずインデント(字下げ)が発生するので、インデントを除く場合はその箇所に \noindent を入れます。
+                </p>
+                <div class="cautionBox">
+                    <div class="pointTitle">
+                        <div>Caution</div>
+                    </div>
+                    <hr>
+                    <p>
+                        コード例の2行目でコメントアウト(行の頭に % をつけることでその行を無視するよう指示する)しているように、 
+                        ltjsarticle では \chapter を使うことができません。使いたい場合にはクラスを変えて 
+                        \documentclass{ltjsreport} などとする必要がありますが、それに付随していくつかの機能やデフォルト値が変わってしまいます。
+                    </p>
+                </div>
+
+                <p class="explanation">
+                    次のように * をつけることで、番号を消すことができます。
+                </p>
+                <div class="codeblock">
+                    <pre>
+<code class="prettyprint linenums lang-tex">\section*{はじめに}
+ほげほげと言えば何でも解決できる</code></pre>
+                </div>
+                <p class="imgBox">
+                    <img src="../images/32_2.png">
+                </p>
+
+                <div class="cautionBox">
+                    <div class="pointTitle">
+                        <div>Caution</div>
+                    </div>
+                    <hr>
+                    <p>
+                        番号を消した場合、次に紹介する目次には自動で追加されません。追加するためには次のコードのようにする必要があります。
+                        必要に応じて chapter の部分を section や subsection に変えて使います。
+                    </p>
+                </div>
+                <div class="codeblock">
+                    <pre>
+<code class="prettyprint linenums lang-tex">\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}</code></pre>
+                </div>
+
+                <h2 id="head2">目次の作成</h2>
+                <p class="explanation">
+                    目次は、次のようにすることで簡単に作ることができます。
+                </p>
+                <div class="codeblock">
+                    <pre>
+<code class="prettyprint linenums lang-tex">\tableofcontents</code></pre>
+                </div>
+                <p class="imgBox">
+                    <img src="../images/32_3.png">
+                </p>
+                <p class="explanation">
+                    もし目次だけのページを作りたい場合は、\clearpage とすればその時点で改ページが行われます。
+                </p>
                 <div class="pointBox">
                     <div class="pointTitle">
                         <div>Point</div>
                     </div>
                     <hr>
                     <p>
-                        説明を書く場所。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。説明を書く場所。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。
+                        目次については、「 tex ファイルを読み込んで toc ファイルを作成」→「 toc ファイルを読み込んで目次に反映」という
+                        手順を踏むので 1回のコンパイルで目次が出力されない場合があります。その場合はもう 1回コンパイルすれば出力されるはずです。
                     </p>
                 </div>
-                <!--ここまでポイント枠-->
+
+                <h2 id="head3">タイトルの作成</h2>
+                <p class="explanation">
+                    論文やレポートでよく使うようなタイトルの作り方を紹介しておきます。
+                </p>
+                <div class="codeblock">
+                    <pre>
+<code class="prettyprint linenums lang-tex">\title{シケタイのためのTeXゼミ}
+\author{ますれー}
+\date{2022年9月1日}
+
+\begin{document}
+\maketitle
+吾輩は猫である。...</code></pre>
+                </div>
+                <p class="imgBox">
+                    <img src="../images/32_4.png">
+                </p>
+                <p class="explanation">
+                    \title ,\author ,\date は必ず<b>プリアンブル</b>に記述して、 \begin{document} の後に \maketitle を
+                    書いて出力します。\author ,\date は省略が可能です。
+                </p>
+                <p class="explanation">
+                    また、クラス指定の部分を \documentclass[titlepage]{ltjsarticle} とすれば 1ページ目をタイトルのみに
+                    することができます。
+                </p>
+
                 <!--ここから前へ・次へボタン-->
                 <div class="footer">
-                    <a href="../section0/2.html">
+                    <a href="../section3/1.html">
                     <div class="button prev">
                         <i class="fa-solid fa-angle-left arrow"></i><!--矢印-->
                         <div class="character character_prev">
                             <span class="miniTitle">前のページ</span><br>
-                            <span class="buttonTitle">環境の準備</span>
+                            <span class="buttonTitle">パッケージ</span>
                         </div>
                     </div>
                     </a>
-                    <a href="../section1/2.html">
+                    <a href="../section3/3.html">
                     <div class="button next">
                         <div class="character character_next">
                             <span class="miniTitle">次のページ</span><br>
-                            <span class="buttonTitle">Windowsの場合</span>
+                            <span class="buttonTitle">文字の装飾</span>
                         </div>
                         <i class="fa-solid fa-angle-right arrow"></i><!--矢印-->
                     </div>
@@ -211,9 +281,9 @@ console.log(foo(5));</code></pre>
             </div> 
             <div class="submenu">
                 <ul>
-                    <li>ダミーテキスト</li>
-                    <li>ダミーテキスト</li>
-                    <li>ダミーテキスト</li>
+                    <li><a href="#head1">章立て</a></li>
+                    <li><a href="#head2">目次の作成</a></li>
+                    <li><a href="#head3">タイトルの作成</a></li>
                 </ul>
             </div>
         </div>

@@ -6,116 +6,102 @@
         <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
         <!--fontawesome-->
         <script src="https://kit.fontawesome.com/60ea5b1c05.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="css/base.css">
-        <link rel="stylesheet" type="text/css" href="css/title.css">
+        <!--コードブロック-->
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/atelier-sulphurpool-dark.css">
+        <link rel="stylesheet" type="text/css" href="../css/base.css">
+        <link rel="stylesheet" type="text/css" href="../css/title.css">
         <title>第0講：環境の準備</title>
     </head>
     <body>
         <!--ここからサイドバー-->
         <div class="sidebar">
-            <a href="index.html"><img src="images/logo2.svg" class="margin"></a>
             <div class="sidebarSticky margin">
+                <a href="../index.html"><img src="../images/logo2.svg" class="margin"></a>
                 <!--ここからアコーディオンメニュー-->
                 <div class="accordion">
                     <div class="option">
                         <input type="checkbox" id="toggle1" class="toggle">
                         <label class="title" for="toggle1">環境の準備</label>
                         <div class="content">
-                            <p href="1.html">Macの場合</p>
-                            <p>Windowsの場合</p>
+                            <a href="../section0/1.html"><p>Macの場合</p></a>
+                            <a href="../section0/2.html"><p>Windowsの場合</p></a>
                         </div>
                     </div>
                     <div class="option">
                         <input type="checkbox" id="toggle2" class="toggle">
                         <label class="title" for="toggle2">はじめてのTeX文書</label>
                         <div class="content">
-                            <p>ファイルの基本構造</p> 
-                            <p>数式モード</p>
-                            <p>数式コマンド(超基本)[分数・四則演算]</p>
-                            <p>コンパイル</p>
-                            <p>実践1 (分数の四則演算)</p>
+                            <a href="../section1/1.html"><p>ファイルの基本構造</p></a>
+                            <a href="../section1/2.html"><p>数式コマンド(超基本)</p></a>
+                            <a href="../section1/3.html"><p>実践1 (分数の四則演算)</p></a>
                         </div>
                     </div>
                     <div class="option">
                         <input type="checkbox" id="toggle3" class="toggle">
                         <label class="title" for="toggle3">数式に慣れる</label>
                         <div class="content">
-                            <p>文字・記号コマンド(基本)[ギリシャ文字・±・平方根]</p>
-                            <p>実践2 (2次方程式・不等式)</p>
-                            <p>数式コマンド(基本)[三角関数・指数対数]</p>
-                            <p>実践3 (指数対数の書き方)</p>
+                            <a href="../section2/1.html"><p>文字・記号コマンド(基本)</p></a>
+                            <a href="../section2/2.html"><p>実践2 (2次方程式・不等式)</p></a>
+                            <a href="../section2/3.html"><p>数式コマンド(基本)</p></a>
+                            <a href="../section2/4.html"><p>実践3 (指数対数の書き方)</p></a>
                         </div>
                     </div>
                     <div class="option">
                         <input type="checkbox" id="toggle4" class="toggle">
                         <label class="title" for="toggle4">文章成形</label>
                         <div class="content">
-                            <p>パッケージの導入</p>
-                            <p>目次を作る</p>
-                            <p>文字を装飾する [フォントサイズ・太さ・色]</p>
-                            <p>文書の中心揃え・図の挿入</p>
-                            <p>表を作る</p>
-                            <p>数式の中央揃えと\displaystyle [\left,\mathrmなども扱う]</p>
-                            <p>実践4 (教科書を写してみる)</p>
+                            <a href="../section3/1.html"><p>パッケージの導入</p></a>
+                            <a href="../section3/2.html"><p>目次を作る</p></a>
+                            <a href="../section3/3.html"><p>文字を装飾する</p></a>
+                            <a href="../section3/4.html"><p>文書の中心揃え・図の挿入</p></a>
+                            <a href="../section3/5.html"><p>表を作る</p></a>
+                            <a href="../section3/6.html"><p>数式の中央揃えと\displaystyle</p></a>
+                            <a href="../section3/7.html"><p>実践4 (教科書を写してみる)</p></a>
                         </div>
                     </div>
                     <div class="option">
                         <input type="checkbox" id="toggle5" class="toggle">
                         <label class="title" for="toggle5">専門的な数式</label>
                         <div class="content">
-                            <p>数列・極限</p>
-                            <p>微分・積分</p>
-                            <p>実践5 (区分求積法)</p>
-                            <p>ベクトル・行列</p>
-                            <p>連立方程式</p>
-                            <p>実践6 (行列とベクトルの積) [\arrayに慣れる]</p>
+                            <a href="../section4/1.html"><p>数列・極限</p></a>
+                            <a href="../section4/2.html"><p>微分・積分</p></a>
+                            <a href="../section4/3.html"><p>実践5 (区分求積法)</p></a>
+                            <a href="../section4/4.html"><p>ベクトル・行列</p></a>
+                            <a href="../section4/5.html"><p>連立方程式</p></a>
+                            <a href="../section4/6.html"><p>実践6 (行列とベクトルの積)</p></a>
                         </div>
                     </div>
                     <div class="option">
                         <input type="checkbox" id="toggle6" class="toggle">
                         <label class="title" for="toggle6">tcolorbox入門</label>
                         <div class="content">
-                            <p>いろいろな枠</p>
-                            <p>tcolorboxを使う [注意：ページ跨ぎできない]</p>
-                            <p>色・形を変えてみる</p>
-                            <p>実践7 (tcolorboxの応用)</p>
+                            <a href="../section5/1.html"><p>いろいろな枠</p></a>
+                            <a href="../section5/2.html"><p>tcolorboxを使う</p></a>
+                            <a href="../section5/3.html"><p>色・形を変えてみる</p></a>
+                            <a href="../section5/4.html"><p>実践7 (tcolorboxの応用)</p></a>
                         </div>
                     </div>
                     <div class="option">
                         <input type="checkbox" id="toggle7" class="toggle">
                         <label class="title" for="toggle7">TikZ入門</label>
                         <div class="content">
-                            <p>座標軸を描く</p>
-                            <p>直線図形と塗りつぶし</p>
-                            <p>関数を描く</p>
-                            <p>実践8 (教科書のグラフを写してみる)</p>
+                            <a href="../section6/1.html"><p>座標軸を描く</p></a>
+                            <a href="../section6/2.html"><p>直線図形と塗りつぶし</p></a>
+                            <a href="../section6/3.html"><p>関数を描く</p></a>
+                            <a href="../section6/4.html"><p>実践8 (教科書のグラフを写してみる)</p></a>
                         </div>
                     </div>
                     <div class="option">
                         <input type="checkbox" id="toggle8" class="toggle">
                         <label class="title" for="toggle8">自作コマンド</label>
                         <div class="content">
-                            <p>自作コマンドの作り方</p>
-                            <p>自作カウンタ</p>
-                        </div>
-                    </div>
-                    <div class="option">
-                        <input type="checkbox" id="toggle9" class="toggle">
-                        <label class="title" for="toggle9">付録</label>
-                        <div class="content">
-                            <p>文字・記号コマンドまとめ</p>
-                            <p>数式コマンドまとめ</p>
-                            <p>写し練習用問題</p>
-                            <p>TikZの作品例</p>
+                            <a href="../section7/1.html"><p>自作コマンドの作り方</p></a>
+                            <a href="../section7/2.html"><p>自作カウンタ</p></a>
                         </div>
                     </div>
                 </div>
                 <!--ここまでアコーディオンメニュー-->
-                <ul class="minilist">
-                    <li>このゼミについて</li>
-                    <li>アンケート</li>
-                    <i class="fa-brands fa-twitter"></i><!--twitterアイコン-->
-                </ul>
             </div>    
         </div>
         <!--ここまでサイドバー-->

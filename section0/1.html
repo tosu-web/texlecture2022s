@@ -7,17 +7,17 @@
         <!--fontawesome-->
         <script src="https://kit.fontawesome.com/60ea5b1c05.js" crossorigin="anonymous"></script>
         <!--コードブロック-->
-        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=tex"></script>
         <link rel="stylesheet" type="text/css" href="../css/atelier-sulphurpool-dark.css">
         <link rel="stylesheet" type="text/css" href="../css/base.css">
         <link rel="stylesheet" type="text/css" href="../css/content.css">
-        <title>0-1：Macの場合</title>
+        <title>0-1:Macの場合</title>
     </head>
     <body>
         <!--ここからサイドバー-->
         <div class="sidebar">
-            <a href="../index.html"><img src="../images/logo2.svg" class="margin"></a>
             <div class="sidebarSticky margin">
+                <a href="../index.html"><img src="../images/logo2.svg" class="margin"></a>
                 <!--ここからアコーディオンメニュー-->
                 <div class="accordion">
                     <div class="option">
@@ -49,7 +49,7 @@
                     </div>
                     <div class="option">
                         <input type="checkbox" id="toggle4" class="toggle">
-                        <label class="title" for="toggle4">文章成形</label>
+                        <label class="title" for="toggle4">文書整形</label>
                         <div class="content">
                             <a href="../section3/1.html"><p>パッケージの導入</p></a>
                             <a href="../section3/2.html"><p>目次を作る</p></a>
@@ -102,11 +102,6 @@
                     </div>
                 </div>
                 <!--ここまでアコーディオンメニュー-->
-                <ul class="minilist">
-                    <li>このゼミについて</li>
-                    <li>アンケート</li>
-                    <i class="fa-brands fa-twitter"></i><!--twitterアイコン-->
-                </ul>
             </div>    
         </div>
         <!--ここまでサイドバー-->
@@ -130,7 +125,7 @@
                     </li>
 
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a itemprop="item" href="content.html">
+                        <a itemprop="item" href="1.html">
                             <span itemprop="name">Macの場合</span>
                         </a>
                         <meta itemprop="position" content="3" />
@@ -145,59 +140,104 @@
                     <div class="bigTitle">
                         Macの場合
                         <p style="margin-top: 10px;">
-                            補足説明を書く場所。これは、ダミーです。これは、ダミーです。
-                            これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                            これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                            まずは TeX を使うための環境設定をします。このページでは Mac の場合の設定を紹介します。
+                            TeX ゼミでは Mac の環境を想定して解説していきますが、 Windows でも問題ないようにします。(Windowsの環境設定は次のページへ)
                         </p>
                     </div>
                 </div>
                 <!--ここまで大見出し-->
+                <h2 id="head1">インストール</h2>
                 <p class="explanation">
-                    説明を書く場所。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。説明を書く場所。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                    これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
+                    TeX を使うためには、環境の準備が必要です。Mac には TeX 本体や編集環境といったものがまとまった便利なパッケージがあります。
+                    ここでは MacTeX を導入します。<br>
+                    まずはこの<a href="https://tug.org/mactex/mactex-download.html">リンク</a>から、 MacTeX.pkg をダウンロードします。
+                    (Safariからダウンロードすることが推奨されているようです)
                 </p>
-                <!--ここからコードブロック-->
-                <div class="codeblock">
-                    <!--以下にコードを貼り付けてください　＊スペースはそのまま反映されます-->
-                    <pre><code class="prettyprint linenums">var foo = function (bar) {
-    return bar++;
-};
-                      
-console.log(foo(5));</code></pre>
-                </div>
-                <!--ここまでコードブロック-->
-                <!--ここからポイント枠-->
+                <p class="explanation">
+                    ダウンロードしたらこのファイルを実行し、指示に従ってインストールを進めます。10〜20分かかります。<br>
+                    「インストールが完了しました。」と出れば MacTeX のインストールが完了です！
+                </p>
+
+                <h2 id="head2">TeXShopの設定</h2>
+                <p class="explanation">
+                    MacTeX を入れれば、ターミナルにコマンドを打ち込んで TeX を使うことができますが、せっかくなので付属されているソフトを利用します。<br>
+                    Finder > アプリケーション または Launchpad から TeXShop を開きます。すると、次のようなウィンドウが出るでしょう。
+                </p> 
+                <p class="imgBox">
+                    <img src="../images/01_1.png">
+                </p>
                 <div class="pointBox">
                     <div class="pointTitle">
                         <div>Point</div>
                     </div>
                     <hr>
                     <p>
-                        説明を書く場所。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。説明を書く場所。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。これは、ダミーです。
-                        これは、ダミーです。これは、ダミーです。
+                        編集・コンパイルをするソフトを一般に「エディター」といいます。TeXShop もその1つで、他にインストールすることで他のエディターを使うことができます。<br>
+                        近年多くのプログラマーに使われている「Visual Studio Code」(通称:VS Code)はさまざまな言語に対応していて、共同編集ができる GitHub にも良く対応しています。
+                        この<a href="https://zenn.dev/thor/articles/732c3e007f77ee">リンク</a>にあるように、LuaLaTeX を VS Code で使うこともできます。
+                        環境設定はそれぞれの好みだと思うので、自分でカスタマイズできるのであれば特にここでは指定はしません。
                     </p>
                 </div>
-                <!--ここまでポイント枠-->
+                <p class="explanation">
+                    ここから設定をしていきます。上部のアップルのロゴの右にある「TeXShop」をクリックして「環境設定」を選択します。
+                </p>
+                <p class="imgBox">
+                    <img src="../images/01_2.png">
+                </p>
+                <p class="explanation">
+                    出てくるウィンドウの「タイプセット」を選択して、画像のように設定して「OK」をクリックすれば設定完了です！
+                </p>
+                <p class="imgBox">
+                    <img src="../images/01_3.png">
+                </p>
+
+                <div class="pointBox">
+                    <div class="pointTitle">
+                        <div>Point</div>
+                    </div>
+                    <hr>
+                    <p>
+                        TeX にはさまざまな種類があり、基本的な機能は変わりませんが高度になると多少の違いが生じてきます。
+                        ここでは LuaLaTeX という近年利用され始められているものを使います。
+                        日本ではまだまだ (u)pLaTeX が使われていて、場面によっては切り替える必要があります。(それに応じて時々一部コードを変える必要があります。)<br>
+                        基本的にはこのサイトの内容であれば大差がなく、変える必要があればその都度記しますので (u)pLaTeX への切り替え方法も紹介しておきます。<br>
+                        TeXShop の設定において「タイプセット」の左段で LaTeX と TeX + DVI を選択し、「内部設定」で以下の内容を書き込みます。<br>
+                        TeX : ptex2pdf -e -ot "-synctex=1 -file-line-error"<br>
+                        LaTeX : ptex2pdf -l -ot "-synctex=1 -file-line-error"<br>
+                        BibTeXエンジン : pbibtex
+                    </p>
+                </div>
+
+                <h2 id="head3">コンパイルの実行</h2>
+                <p class="explanation">
+                    TeX のプログラムを pdf に変換するような翻訳作業を<b>コンパイル</b>といいます。TeXShop では簡単にコンパイルすることができます。<br>
+                    中身は後で解説するので、とりあえず次のコードをコピーして画像のように書き込み、左上の「コンパイル」をクリックします。
+                </p>
+                <div class="codeblock">
+                    <pre>
+<code class="prettyprint linenums lang-tex">\documentclass{ltjsarticle}
+
+\begin{document}
+ほげほげ
+\end{document}</code></pre>
+                </div>
+                <p class="explanation">
+                    未保存の場合はファイル名と保存場所を求められるので、入力しておきます。<br>
+                    正しく入力・設定できていれば pdf が表示されるはずです！
+                </p>
+
                 <!--ここから前へ・次へボタン-->
                 <div class="footer">
-                    <a href="../section0/2.html">
+                    <a href="../index.html">
                     <div class="button prev">
                         <i class="fa-solid fa-angle-left arrow"></i><!--矢印-->
                         <div class="character character_prev">
                             <span class="miniTitle">前のページ</span><br>
-                            <span class="buttonTitle">環境の準備</span>
+                            <span class="buttonTitle">ホーム</span>
                         </div>
                     </div>
                     </a>
-                    <a href="../section1/2.html">
+                    <a href="../section0/2.html">
                     <div class="button next">
                         <div class="character character_next">
                             <span class="miniTitle">次のページ</span><br>
@@ -211,9 +251,9 @@ console.log(foo(5));</code></pre>
             </div> 
             <div class="submenu">
                 <ul>
-                    <li>ダミーテキスト</li>
-                    <li>ダミーテキスト</li>
-                    <li>ダミーテキスト</li>
+                    <li><a href="#head1">インストール</a></li>
+                    <li><a href="#head2">TeXShopの設定</a></li>
+                    <li><a href="#head3">コンパイルの実行</a></li>
                 </ul>
             </div>
         </div>

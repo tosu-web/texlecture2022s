@@ -1,0 +1,22 @@
+# Fdb version 3
+["dvipdf"] 1661103232 "1.dvi" "1.pdf" "1" 1661103233
+  "1.dvi" 1661103232 332 49152d66e71512a541f285c42039adee "latex"
+  (generated)
+  "1.pdf"
+["latex"] 1661103232 "1.tex" "1.dvi" "1" 1661103233
+  "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1136768653 1292 21c1c5bfeaebccffdb478fd231a0997d ""
+  "/usr/local/texlive/2021/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-h.tfm" 1522271273 812 52bd92aa20c58a398601cda6dd62c8d1 ""
+  "/usr/local/texlive/2021/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-v.tfm" 1522271273 536 5f2475e9deb198c23894800d3c5eed00 ""
+  "/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-dvips.def" 1616101731 33684 1ea177219ce380b3f1b75a786a0b24e7 ""
+  "/usr/local/texlive/2021/texmf-dist/tex/platex/jsclasses/jsarticle.cls" 1602274849 60810 4554ddf6e0b4ed9f3f486c72558ba459 ""
+  "/usr/local/texlive/2021/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1601931076 5585 8e4615c54073c390d14154b29cee89cb ""
+  "/usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf" 1616443989 39972 3d6bb4d9d719e93193fa020b58adf5d4 ""
+  "/usr/local/texlive/2021/texmf-var/web2c/euptex/uplatex.fmt" 1647339577 2693213 ccff507c002fe22d674734930398c052 ""
+  "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
+  "1.aux" 1661103232 32 3985256e7290058c681f74d7a3565a19 "latex"
+  "1.tex" 1661103232 94 06d5e513d49ec57cb3117bea5bcfbe1b ""
+  (generated)
+  "1.log"
+  "1.aux"
+  "1.dvi"
